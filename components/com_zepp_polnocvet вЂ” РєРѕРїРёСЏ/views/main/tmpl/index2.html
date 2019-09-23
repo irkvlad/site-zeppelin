@@ -1,0 +1,33 @@
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; Charset=UTF-8">
+	<script type="text/javascript" src="/includes/js/jquery-3.1.0.min.js"></script>
+</head>
+
+<body>
+	
+	<div id="content">11111</div>
+	222222
+	<script>
+		jQuery.noConflict();
+		function show()
+		{
+			jQuery.ajax({
+				url: "http://nash.zepp/components/com_zepp_polnocvet/views/main/tmpl/time.php",
+				cache: false,
+				success: function(html){
+					jQuery("#content").html(html);
+				}
+			});
+		}
+
+		jQuery(document).ready(function(){
+			show();
+			setInterval('show()',1000);
+		});
+	</script>
+	
+</body>
+</html>

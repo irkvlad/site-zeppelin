@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<name>Image Edit Form</name>
+	<params addpath="/administrator/components/com_joomgallery/elements">
+		<param name="owner" type="owner" default="" label="JGA_COMMON_OWNER" description="JGA_COMMON_OWNER_DESC" />
+		<param name="imgauthor" type="text" size="20" default="" label="JGA_COMMON_AUTHOR" description="JGA_IMGMAN_AUTHOR_TIP" />
+		<!--<param name="access" type="list" size="20" default="0" label="JGA_COMMON_ACCESS" description="JGA_HIT_DESC">
+			<option value="0">Public</option>
+			<option value="1">Registered</option>
+			<option value="2">Special</option>
+		</param>-->
+		<param name="hidden" type="radio" default="0" label="JGA_IMGMAN_HIDDEN" description="JGA_IMGMAN_HIDDEN_TIP">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+  <params group="files">
+    <param name="spacer" type="spacer" default="JGA_IMGMAN_REPLACE_FILES_DESCRIPTION" />
+		<param name="thumb" type="file" size="20" default="" label="JGA_IMGMAN_REPLACE_THUMB" description="JGA_IMGMAN_REPLACE_THUMB_TIP" />
+		<param name="img" type="file" size="20" default="" label="JGA_IMGMAN_REPLACE_IMG" description="JGA_IMGMAN_REPLACE_IMG_TIP" />
+		<param name="orig" type="file" size="20" default="" label="JGA_IMGMAN_REPLACE_ORIG" description="JGA_IMGMAN_REPLACE_ORIG_TIP" />
+  </params>
+	<params group="metadata">
+		<param name="metadesc" type="textarea" rows="5" cols="30" default="" label="JGA_COMMON_METADESC" description="JGA_COMMON_METADESC_TIP" />
+		<param name="metakey" type="textarea" rows="5" cols="30" default="" label="JGA_COMMON_METAKEYS" description="JGA_COMMON_METAKEYS_TIP" />
+		<!--<param name="robots" type="text" size="20" default="" label="Robots" description="METAROBOTS" />
+		<param name="author" type="text" size="20" default="" label="Author" description="METAAUTHOR" />-->
+	</params>
+</form>

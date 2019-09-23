@@ -1,0 +1,38 @@
+25/11/2014
+ 1. Сохранение файла календарика , большой формат с нижним подчеркиванием, controller.php ; стр.312.
+
+ //2. Уведомление на почту Карташова black@zepp.ru по остановленным проектам, где есть подрядчик. html.helper.php ; стр. 1101, 1114, 1115
+
+ 3. Списки менеджеров технологов и дизайнеров в форме вида категорий:
+                \views\cat\view.html.php; стр. 66-112 , 124-126;
+                \views\cat\tmpl\form.php; стр. 
+                (!!!заполнить контакты!!!)
+
+2/12/2014
+ 4. Функция getContactName components\com_projectlog\helpers\html.helper.php 155
+
+ 5. Список бригадиров: components\com_projectlog\views\project\view.html.php 36 , 54
+
+ 6. Сохранине бригадира components\com_projectlog\controller.php 515
+
+ 7. Поле выбора бригадира components\com_projectlog\views\project\tmpl\default.php 42, 248 
+
+ 8. Колнока бригадира с сортировкой и фильтр по бригадиру:
+        components\com_projectlog\views\cat\tmpl\default.php 210, 320
+        components\com_projectlog\models\cat.php  115, 118
+        components\com_projectlog\views\cat\view.html.php 61, 62
+    
+ 9. Поле бригадира в таблицах:
+        components\com_projectlog\views\cat\tmpl\form.php 48
+        (!!!заполнить контакты!!!)
+        
+3/12/2014
+
+ 10. components\com_projectlog\controller.php функция  case 'copyProject'
+ 11. components\com_projectlog\models\cat.php функция function copyProject($post){
+ 12. components\com_projectlog\views\project\tmpl\default.php добавленна кнопка "копировать" стр 217 и переменная $add_copy_link стр 43
+ 
+ 
+4/12/2014
+    13 components\com_projectlog\models\cat.php function saveProject($post){ отправка почты , 
+    добавленно условие : if($row->category > 6 )

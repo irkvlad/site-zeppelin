@@ -1,0 +1,28 @@
+/*
+// JoomlaWorks "Ultimate Content Display" Module for Joomla! 1.5.x - Version 1.1
+// License: http://www.gnu.org/copyleft/gpl.html
+// Copyright (c) 2006 - 2008 JoomlaWorks, a Komrade LLC company.
+// More info at http://www.joomlaworks.gr
+// Developers: Fotis Evangelou - George Chouliaras
+// ***Last update: May 13th, 2008***
+*/
+
+div.ucd {} /* Container, accepts module class suffix: div.ucd[moduleclass suffix] */
+ul.ucd_jqueryfader {margin:0;padding:0;list-style:none;text-align:left;} /* Fader styling */
+ul.ucd_jqueryfader li.ucd_item {margin:0;padding:0;border:none;background:none;float:none;} /* Fader item styling */
+ul.ucd_jqueryfader li.ucd_item div.ucd_title {float:none;background:none;margin:0;padding:0;} /* Title */
+ul.ucd_jqueryfader li.ucd_item span.ucd_date {color:#909090;margin:0 4px 0 0;padding:0;font-size:11px;} /* Date */
+ul.ucd_jqueryfader li.ucd_item span.ucd_sec_cat {font-size:11px;} /* Section/Category */
+ul.ucd_jqueryfader li.ucd_item div.ucd_introtext {margin:0;padding:0;} /* Introtext */
+/* "Read more..." button */
+ul.ucd_jqueryfader li.ucd_item a.ucd_readon {display:block;float:none;font-size:11px;margin:4px 0 8px 0;padding:0;text-align:left;}
+ul.ucd_jqueryfader li.ucd_item a.ucd_readon:hover {display:block;float:none;font-size:11px;margin:4px 0 8px 0;padding:0;text-align:left;}
+
+/* Style cleanup */
+ul.ucd_jqueryfader li.ucd_item div.ucd_introtext p {margin:0;padding:0;}
+ul.ucd_jqueryfader,ul.ucd_jqueryfader li {overflow:hidden;}
+
+/* Bottom fade */
+.ucd_jqueryfader_bottomfade {background:url("bottomfade.png") repeat-x bottom;position:relative;height:20px;width:100%;margin-top:-20px;}
+
+/* --- END --- */

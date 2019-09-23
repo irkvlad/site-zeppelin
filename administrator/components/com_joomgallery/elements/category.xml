@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<name>Category Edit Form</name>
+	<params addpath="/administrator/components/com_joomgallery/elements">
+		<param name="owner" type="owner" default="" label="JGA_COMMON_OWNER" description="JGA_COMMON_OWNER_DESC" />
+		<param name="access" type="list" default="0" label="JGA_COMMON_ACCESS" description="JGA_CATMAN_ACCESS_TIP">
+			<option value="0">Public</option>
+			<option value="1">Registered</option>
+			<option value="2">Special</option>
+		</param>
+		<param name="hidden" type="radio" default="0" label="JGA_CATMAN_HIDDEN" description="JGA_CATMAN_HIDDEN_TIP">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="ordering" type="ordering" default="" label="JGA_CATMAN_ORDERING" description="JGA_CATMAN_ORDERING_TIP" />
+		<param name="catimage" type="thumbnail" default="" label="JGA_COMMON_THUMBNAIL" description="JGA_CATMAN_THUMBNAIL_TIP" />
+		<param name="img_position" type="list" default="0" label="JGA_CATMAN_THUMBNAIL_ALIGN" description="JGA_CATMAN_THUMBNAIL_ALIGN_TIP">
+			<option value="0">JGA_COMMON_OPTION_FLUSH_LEFT</option>
+			<option value="1">JGA_COMMON_OPTION_FLUSH_RIGHT</option>
+			<option value="2">JGA_COMMON_OPTION_CENTERED</option>
+		</param>
+	</params>
+	<params group="metadata">
+		<param name="metadesc" type="textarea" rows="5" cols="30" default="" label="JGA_COMMON_METADESC" description="JGA_COMMON_METADESC_TIP" />
+		<param name="metakey" type="textarea" rows="5" cols="30" default="" label="JGA_COMMON_METAKEYS" description="JGA_COMMON_METAKEYS_TIP" />
+		<!--<param name="robots" type="text" size="20" default="" label="Robots" description="METAROBOTS" />
+		<param name="author" type="text" size="20" default="" label="Author" description="METAAUTHOR" />-->
+	</params>
+</form>

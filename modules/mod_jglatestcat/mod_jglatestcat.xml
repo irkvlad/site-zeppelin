@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+  <name>JoomGallery Latest Categories</name>
+  <author>Erftralle</author>
+  <creationDate>2009/06/23</creationDate>
+  <copyright>Erftralle</copyright>
+  <license>This module is released under the GNU/GPL License</license>
+  <authorEmail></authorEmail>
+  <authorUrl></authorUrl>
+  <version>1.5.1</version>
+  <description>JoomGallery Neuste Kategorien / JoomGallery Latest Categories</description>
+  <files>
+    <filename module="mod_jglatestcat">mod_jglatestcat.php</filename>
+    <filename>index.html</filename>
+    <filename>helper.php</filename>
+    <filename>LICENSE.TXT</filename>
+    <filename>changelog.php</filename>
+    <filename>tmpl/default.php</filename>
+    <filename>tmpl/index.html</filename>
+  </files>
+  <languages>
+   <language tag="en-GB">languages/en-GB/en-GB.mod_jglatestcat.ini</language>
+   <language tag="de-DE">languages/de-DE/de-DE.mod_jglatestcat.ini</language>
+  </languages>
+  <params>
+    <param name="@spacer" type="spacer" default="JG_LATESTCAT_COMMON_PARAMETER_LBL" label="" description="" />
+    <param name="moduleclass_sfx" type="text" default="" label="JG_LATESTCAT_MODULE_CLASS_SUFFIX_LBL" description="JG_LATESTCAT_MODULE_CLASS_SUFFIX_DESC" />
+    <param name="cfg_count" type="text" default="4" label="JG_LATESTCAT_COUNT_LBL" description="JG_LATESTCAT_COUNT_DESC"/>
+    <param name="cfg_showthumb" type="list" default="0" label="JG_LATESTCAT_SHOWTHUMB_LBL" description="JG_LATESTCAT_SHOWTHUMB_DESC">
+      <option value="0">JG_LATESTCAT_SHOWTHUMB_RANDOM_LBL</option>
+      <option value="1">JG_LATESTCAT_SHOWTHUMB_CATEGORY_LBL</option>
+      <option value="2">JG_LATESTCAT_SHOWTHUMB_NONE_LBL</option>
+    </param>
+    <param name="cfg_showimglink" type="list" default="1" label="JG_LATESTCAT_SHOWIMGLINK_LBL" description="JG_LATESTCAT_SHOWIMGLINK_DESC">
+      <option value="0">JG_LATESTCAT_SHOWIMGLINK_NONE_LBL</option>
+      <option value="1">JG_LATESTCAT_SHOWIMGLINK_DETAIL_LBL</option>
+      <option value="2">JG_LATESTCAT_SHOWIMGLINK_CATEGORY_LBL</option>
+    </param>
+    <param name="cfg_showimgcat" type="radio" default="1" label="JG_LATESTCAT_SHOWIMGCAT_LBL" description="JG_LATESTCAT_SHOWIMGCAT_DESC">
+      <option value="0">JG_LATESTCAT_NO_LBL</option>
+      <option value="1">JG_LATESTCAT_YES_LBL</option>
+    </param>
+    <param name="cfg_showimgcatlink" type="radio" default="1" label="JG_LATESTCAT_SHOWIMGCATLINK_LBL" description="JG_LATESTCAT_SHOWIMGCATLINK_DESC">
+      <option value="0">JG_LATESTCAT_NO_LBL</option>
+      <option value="1">JG_LATESTCAT_YES_LBL</option>
+    </param>
+    <param name="cfg_showimgdescr" type="radio" default="0" label="JG_LATESTCAT_SHOWIMGDESCR_LBL" description="JG_LATESTCAT_SHOWIMGDESCR_DESC">
+      <option value="0">JG_LATESTCAT_NO_LBL</option>
+      <option value="1">JG_LATESTCAT_YES_LBL</option>
+    </param>
+    <param name="cfg_access" type="radio" default="1" label="JG_LATESTCAT_ACCESS_LBL" description="JG_LATESTCAT_ACCESS_DESC">
+      <option value="0">JG_LATESTCAT_NO_LBL</option>
+      <option value="1">JG_LATESTCAT_YES_LBL</option>
+    </param>
+    <param name="@spacer" type="spacer" default="JG_LATESTCAT_VIEW_PARAMETER_LBL" label="" description="" />
+    <param name="cfg_rows" type="text" default="1" label="JG_LATESTCAT_ROWS_LBL" description="JG_LATESTCAT_ROWS_DESC"/>
+    <param name="cfg_thumbnaildim" type="list" default="0" label="JG_LATESTCAT_THUMBNAILDIM_LBL" description="JG_LATESTCAT_THUMBNAILDIM_DESC">
+      <option value="0">JG_LATESTCAT_THUMBNAILDIM_ORG_LBL</option>
+      <option value="1">JG_LATESTCAT_THUMBNAILDIM_HEIGHT_LBL</option>
+      <option value="2">JG_LATESTCAT_THUMBNAILDIM_WIDTH_LBL</option>
+    </param>
+    <param name="cfg_thumbnaildimvalue" type="text" default="150" label="JG_LATESTCAT_THUMBNAILDIMVALUE_LBL" description="JG_LATESTCAT_THUMBNAILDIMVALUE_DESC"/>
+    <param name="cfg_imgposition" type="list" default="1" label="JG_LATESTCAT_IMGPOSITION_LBL" description="JG_LATESTCAT_IMGPOSITION_DESC">
+      <option value="1">JG_LATESTCAT_IMGPOSITION_ABOVE_LBL</option>
+      <option value="2">JG_LATESTCAT_LEFT_LBL</option>
+      <option value="3">JG_LATESTCAT_RIGHT_LBL</option>
+      <option value="4">JG_LATESTCAT_BELOW_LBL</option>
+    </param>
+    <param name="cfg_horalign" type="list" default="center" label="JG_LATESTCAT_HORALIGN_LBL" description="JG_LATESTCAT_HORALIGN_DESC">
+      <option value="left">JG_LATESTCAT_HORALIGN_LEFT_LBL</option>
+      <option value="center">JG_LATESTCAT_HORALIGN_CENTER_LBL</option>
+      <option value="right">JG_LATESTCAT_HORALIGN_RIGHT_LBL</option>
+    </param>
+    <param name="cfg_imgshowborder" type="radio" default="1" label="JG_LATESTCAT_IMGSHOWBORDER_LBL" description="JG_LATESTCAT_IMGSHOWBORDER_DESC">
+      <option value="0">JG_LATESTCAT_NO_LBL</option>
+      <option value="1">JG_LATESTCAT_YES_LBL</option>
+    </param>
+    <param name="cfg_imgborderwidth" type="text" default="1px" label="JG_LATESTCAT_IMGBORDERWIDTH_LBL" description="JG_LATESTCAT_IMGBORDERWIDTH_DESC"/>
+    <param name="cfg_imgborderstyle" type="list" default="solid" label="JG_LATESTCAT_IMGBORDERSTYLE_LBL" description="JG_LATESTCAT_IMGBORDERSTYLE_DESC">
+        <option value="solid">solid</option>
+        <option value="dotted">dotted</option>
+        <option value="dashed">dashed</option>
+        <option value="double">double</option>
+        <option value="groove">groove</option>
+        <option value="ridge">ridge</option>
+        <option value="inset">inset</option>
+        <option value="outset">outset</option>    
+    </param>
+    <param name="cfg_imgbordercolor" type="text" default="#C3C3C3" label="JG_LATESTCAT_IMGBORDERCOLOR_LBL" description="JG_LATESTCAT_IMGBORDERCOLOR_DESC"/>
+    <param name="cfg_imgpadding" type="text" default="3px" label="JG_LATESTCAT_IMGPADDING_LBL" description="JG_LATESTCAT_IMGPADDING_DESC"/>
+    <param name="cfg_imgbgcolor" type="text" default="#FFFFFF" label="JG_LATESTCAT_IMGBGCOLOR_LBL" description="JG_LATESTCAT_IMGBGCOLOR_DESC"/>
+    <param name="cfg_showshorttext" type="radio" default="0" label="JG_LATESTCAT_SHOWSHORTTEXT_LBL" description="JG_LATESTCAT_SHOWSHORTTEXT_DESC">
+      <option value="0">JG_LATESTCAT_NO_LBL</option>
+      <option value="1">JG_LATESTCAT_YES_LBL</option>
+    </param>
+    <param name="cfg_showhorruler" type="radio" default="1" label="JG_LATESTCAT_SHOWHORRULER_LBL" description="JG_LATESTCAT_SHOWHORRULER_DESC">
+      <option value="0">JG_LATESTCAT_NO_LBL</option>
+      <option value="1">JG_LATESTCAT_YES_LBL</option>
+    </param>
+    <param name="cfg_txtresetliststyle" type="radio" default="0" label="JG_LATESTCAT_TXTRESETLISTSTYLE_LBL" description="JG_LATESTCAT_TXTRESETLISTSTYLE_DESC">
+      <option value="0">JG_LATESTCAT_NO_LBL</option>
+      <option value="1">JG_LATESTCAT_YES_LBL</option>
+    </param>
+  </params>
+</install>

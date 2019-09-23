@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="user" method="upgrade">
+  <name>User - AutoCreation of Categories</name>
+  <author>Patrick Alt</author>
+  <creationDate>27.08.2011</creationDate>
+  <copyright>Copyright (C) 2009 - 2011 Open Source Matters. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>chraneco@joomgallery.net</authorEmail>
+  <authorUrl>www.joomgallery.net</authorUrl>
+  <version>1.5</version>
+  <description>This Plugin automatically creates a new category in JoomGallery whenever a new user is registered in Joomla! and assigns this user to the category.</description>
+  <files>
+    <filename plugin="joomautocat">joomautocat.php</filename>
+  </files>
+  <languages folder="language">
+    <language tag="en-GB">en-GB.plg_user_joomautocat.ini</language>
+    <language tag="de-DE">de-DE.plg_user_joomautocat.ini</language>
+  </languages>
+  <params>
+    <param name="parent" type="text" default="" label="JUAC_PARENT" description="JUAC_PARENT_DESCRIPTION" />
+    <param name="published" type="radio" default="1" label="JUAC_PUBLISHED" description="JUAC_PUBLISHED_DESCRIPTION">
+      <option value="0">No</option>
+      <option value="1">YES</option>
+    </param>
+    <param name="access" type="list" default="0" label="JUAC_ACCESS" description="JUAC_ACCESS_DESCRIPTION">
+      <option value="0">PUBLIC</option>
+      <option value="1">REGISTERED</option>
+      <option value="2">SPECIAL</option>
+    </param>
+    <param name="onlogin" type="radio" default="1" label="JUAC_ONLOGIN" description="JUAC_ONLOGIN_DESCRIPTION">
+      <option value="0">No</option>
+      <option value="1">YES</option>
+    </param>
+    <param name="categoryname" type="list" default="0" label="JUAC_CATEGORYNAME" description="JUAC_CATEGORYNAME_DESCRIPTION">
+      <option value="0">JUAC_CATEGORYNAME_LIKE_IN_JOOMGALLERY</option>
+      <option value="1">JUAC_CATEGORYNAME_NAME</option>
+      <option value="2">JUAC_CATEGORYNAME_USERNAME</option>
+    </param>
+  </params>
+</install>

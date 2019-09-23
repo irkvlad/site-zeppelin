@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="joomgallery" method="upgrade">
+  <name>JoomGallery - Integrate Slimbox</name>
+  <author>JoomGallery team</author>
+  <creationDate>29.3.2011</creationDate>
+  <copyright>Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>team@joomgallery.net</authorEmail>
+  <authorUrl>www.joomgallery.net</authorUrl>
+  <version>1.5.2</version>
+  <description>JSLB_DESCRIPTION</description>
+  <files>
+    <filename plugin="joommultislimbox">joommultislimbox.php</filename>
+    <folder>joommultislimbox</folder>
+  </files>
+  <languages folder="language">
+    <language tag="en-GB">en-GB.plg_joomgallery_joommultislimbox.ini</language>
+    <language tag="de-DE">de-DE.plg_joomgallery_joommultislimbox.ini</language>
+  </languages>
+  <params>
+    <param name="global_slimbox_existent" type="radio" default="0" label="JSLB_GLOBAL_SLIMBOX_EXISTENT_LABEL" description="JSLB_GLOBAL_SLIMBOX_EXISTENT_LABEL_DESC">
+      <option value="0">No</option>
+      <option value="1">YES</option>
+    </param>
+    <param name="slimbox" type="list" default="0" label="JSLB_SLIMBOX_VERSIONS" description="JSLB_SLIMBOX_VERSIONS_DESC">
+      <option value="0">1.58</option>
+      <option value="1">1.71</option>
+      <option value="2">2.0.4</option>
+    </param>
+    <param name="replace_mootools" type="radio" default="0" label="JSLB_REPL_MOOTOOLS" description="JSLB_REPL_MOOTOOLS_DESC">
+      <option value="0">No</option>
+      <option value="1">YES</option>
+    </param>    
+    <param name="resizeimage" type="radio" default="0" label="JSLB_SLIMBOX_RESIZEIMAGE" description="JSLB_SLIMBOX_RESIZEIMAGE_DESC" >
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="resizespeed" type="text" default="5" label="JSLB_SLIMBOX_RESIZESPEED" description="JSLB_SLIMBOX_RESIZESPEED_DESC" />
+  </params>
+</install>

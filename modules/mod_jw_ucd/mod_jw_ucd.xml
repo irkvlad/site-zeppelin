@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+  <name>Ultimate Content Display</name>
+  <author>JoomlaWorks</author>
+  <creationDate>13/05/2008</creationDate>
+  <copyright>This extension in released under the GNU/GPL License - http://www.gnu.org/copyleft/gpl.html</copyright>
+  <authorEmail>joomlaworks@gmail.com</authorEmail>
+  <authorUrl>www.joomlaworks.gr</authorUrl>
+  <version>1.1</version>
+  <description>JWUCD_DESCRIPTION</description>
+  <params>
+    <param name="moduleclass_sfx" type="text" default="" label="JWUCD_MODULE_CLASS_SUFFIX" description="JWUCD_MODULE_CLASS_SUFFIX_DESC" />
+    <param name="disablecss" type="radio" default="0" label="JWUCD_DISAVBLE_MODULE_CSS" description="JWUCD_DISAVBLE_MODULE_CSS_DESC">
+      <option value="0">JWUCD_NO</option>
+      <option value="1">JWUCD_YES</option>
+    </param>
+    <param name="cache" type="radio" default="0" label="JWUCD_ENABLE_CACHE" description="JWUCD_ENABLE_CACHE_DESC">
+      <option value="0">JWUCD_NO</option>
+      <option value="1">JWUCD_YES</option>
+    </param>
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="ucd_displaytype" type="list" default="list" label="JWUCD_CONTENT_DISPLAY_TYPE" description="JWUCD_CONTENT_DISPLAY_TYPE_DESC">
+      <option value="list">JWUCD_CONTENT_DISPLAY_TYPE_VALUE1</option>
+      <option value="ajaxfader">JWUCD_CONTENT_DISPLAY_TYPE_VALUE2</option>
+      <option value="jqueryfader">JWUCD_CONTENT_DISPLAY_TYPE_VALUE3</option>
+    </param>
+    <param name="uniqueid" type="text" default="ucd-instance" label="JWUCD_UNIQUE_ID" description="JWUCD_UNIQUE_ID_DESC" />
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="@spacer" type="spacer" default="======== CONTENT RETRIEVAL SETTINGS ========" label="" description="" />
+    <param name="where" type="list" default="section" label="JWUCD_CONTENT_SOURCE_TYPE" description="JWUCD_CONTENT_SOURCE_TYPE_DESC">
+      <option value="section">JWUCD_CONTENT_SOURCE_TYPE_VALUE1</option>
+      <option value="category">JWUCD_CONTENT_SOURCE_TYPE_VALUE2</option>
+      <option value="content">JWUCD_CONTENT_SOURCE_TYPE_VALUE3</option>
+      <option value="newsfeed">JWUCD_CONTENT_SOURCE_TYPE_VALUE4</option>
+      <option value="newsfeed_item">JWUCD_CONTENT_SOURCE_TYPE_VALUE5</option>
+    </param>
+    <param name="where_id" type="text" default="" label="JWUCD_CONTENT_SOURCE_IDS" description="JWUCD_CONTENT_SOURCE_IDS_DESC" />
+    <param name="ordering" type="list" default="rdate" label="JWUCD_CONTENT_SOURCE_ORDERING" description="JWUCD_CONTENT_SOURCE_ORDERING_DESC">
+      <option value="rdate">JWUCD_CONTENT_SOURCE_ORDERING_VALUE1</option>
+      <option value="date">JWUCD_CONTENT_SOURCE_ORDERING_VALUE2</option>
+      <option value="alpha">JWUCD_CONTENT_SOURCE_ORDERING_VALUE3</option>
+      <option value="ralpha">JWUCD_CONTENT_SOURCE_ORDERING_VALUE4</option>
+      <option value="hits">JWUCD_CONTENT_SOURCE_ORDERING_VALUE5</option>
+      <option value="rhits">JWUCD_CONTENT_SOURCE_ORDERING_VALUE6</option>
+      <option value="order">JWUCD_CONTENT_SOURCE_ORDERING_VALUE7</option>
+      <option value="random">JWUCD_CONTENT_SOURCE_ORDERING_VALUE8</option>
+    </param>
+    <param name="count" type="text" default="5" label="JWUCD_CONTENT_SOURCE_COUNT" description="JWUCD_CONTENT_SOURCE_COUNT_DESC" />
+    <param name="show_front" type="radio" default="0" label="JWUCD_CONTENT_SOURCE_FRONTPAGE" description="JWUCD_CONTENT_SOURCE_FRONTPAGE_DESC">
+      <option value="1">JWUCD_SHOW</option>
+      <option value="0">JWUCD_HIDE</option>
+    </param>
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="@spacer" type="spacer" default="======== ITEM DISPLAY SETTINGS ========" label="" description="" />
+    <param name="display" type="list" default="2" label="JWUCD_ITEM_DISPLAY_SETTINGS_DISPLAY" description="JWUCD_ITEM_DISPLAY_SETTINGS_DISPLAY_DESC">
+      <option value="0">JWUCD_ITEM_DISPLAY_SETTINGS_DISPLAY_VALUE1</option>
+      <option value="1">JWUCD_ITEM_DISPLAY_SETTINGS_DISPLAY_VALUE2</option>
+      <option value="2">JWUCD_ITEM_DISPLAY_SETTINGS_DISPLAY_VALUE3</option>
+    </param>
+    <param name="linked" type="radio" default="1" label="JWUCD_ITEM_DISPLAY_SETTINGS_ENABLELINK" description="JWUCD_ITEM_DISPLAY_SETTINGS_ENABLELINK_DESC">
+      <option value="0">JWUCD_NO</option>
+      <option value="1">JWUCD_YES</option>
+    </param>
+    <param name="datecreated" type="radio" default="1" label="JWUCD_ITEM_DISPLAY_SETTINGS_CREATIONDATE" description="JWUCD_ITEM_DISPLAY_SETTINGS_CREATIONDATE_DESC">
+      <option value="0">JWUCD_NO</option>
+      <option value="1">JWUCD_YES</option>
+    </param>
+    <param name="show_section_title" type="radio" default="1" label="JWUCD_ITEM_DISPLAY_SETTINGS_SECTIONTITLE" description="JWUCD_ITEM_DISPLAY_SETTINGS_SECTIONTITLE_DESC">
+      <option value="1">JWUCD_SHOW</option>
+      <option value="0">JWUCD_HIDE</option>
+    </param>
+    <param name="show_category_title" type="radio" default="1" label="JWUCD_ITEM_DISPLAY_SETTINGS_CATEGORYTITLE" description="JWUCD_ITEM_DISPLAY_SETTINGS_CATEGORYTITLE_DESC">
+      <option value="1">JWUCD_SHOW</option>
+      <option value="0">JWUCD_HIDE</option>
+    </param>
+    <param name="seperator" type="text" default=">>" label="JWUCD_ITEM_DISPLAY_SETTINGS_SEPERATOR" description="JWUCD_ITEM_DISPLAY_SETTINGS_SEPERATOR_DESC" />
+    <param name="words" type="text" default="" label="JWUCD_ITEM_DISPLAY_SETTINGS_WORDLIMIT" description="JWUCD_ITEM_DISPLAY_SETTINGS_WORDLIMIT_DESC" />
+    <param name="chars" type="text" default="" label="JWUCD_ITEM_DISPLAY_SETTINGS_CHARLIMIT" description="JWUCD_ITEM_DISPLAY_SETTINGS_CHARLIMIT_DESC" />
+    <param name="more" type="radio" default="1" label="JWUCD_ITEM_DISPLAY_SETTINGS_READMORE" description="JWUCD_ITEM_DISPLAY_SETTINGS_READMORE_DESC">
+      <option value="0">JWUCD_NO</option>
+      <option value="1">JWUCD_YES</option>
+    </param>
+    <param name="plugins" type="radio" default="1" label="JWUCD_ITEM_DISPLAY_SETTINGS_LOADPLUGINS" description="JWUCD_ITEM_DISPLAY_SETTINGS_LOADPLUGINS_DESC">
+      <option value="0">JWUCD_NO</option>
+      <option value="1">JWUCD_YES</option>
+    </param>
+    <param name="hideimages" type="radio" default="0" label="JWUCD_ITEM_DISPLAY_SETTINGS_HIDE_INTRO_IMAGES" description="JWUCD_ITEM_DISPLAY_SETTINGS_HIDE_INTRO_IMAGES_DESC">
+      <option value="0">JWUCD_NO</option>
+      <option value="1">JWUCD_YES</option>
+    </param>
+    <param name="cleanupimages" type="radio" default="0" label="JWUCD_ITEM_DISPLAY_SETTINGS_REMOVE_ATTR_IMAGES" description="JWUCD_ITEM_DISPLAY_SETTINGS_REMOVE_ATTR_IMAGES_DESC">
+      <option value="0">JWUCD_NO</option>
+      <option value="1">JWUCD_YES</option>
+    </param>
+    <param name="striptags" type="radio" default="0" label="JWUCD_ITEM_DISPLAY_SETTINGS_HTML_CLEANUP" description="JWUCD_ITEM_DISPLAY_SETTINGS_HTML_CLEANUP_DESC">
+      <option value="0">JWUCD_NO</option>
+      <option value="1">JWUCD_YES</option>
+    </param>
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="@spacer" type="spacer" default="======== AJAX CROSS FADER SETTINGS ========" label="" description="" />
+    <param name="ucd_ajf_width" type="text" default="100%" label="JWUCD_AJAXCROSSFADER_SETTINGS_WIDTH" description="JWUCD_AJAXCROSSFADER_SETTINGS_WIDTH_DESC" />
+    <param name="ucd_ajf_height" type="text" default="300px" label="JWUCD_AJAXCROSSFADER_SETTINGS_HEIGHT" description="JWUCD_AJAXCROSSFADER_SETTINGS_HEIGHT_DESC" />
+    <param name="ucd_ajf_delay" type="text" default="6000" label="JWUCD_AJAXCROSSFADER_SETTINGS_DELAY" description="JWUCD_AJAXCROSSFADER_SETTINGS_DELAY_DESC" />
+    <param name="ucd_ajf_bgcolor" type="text" default="#ffffff" label="JWUCD_AJAXCROSSFADER_SETTINGS_BGDCOLOR" description="JWUCD_AJAXCROSSFADER_SETTINGS_BGDCOLOR_DESC" />
+    <param name="ucd_ajf_bottomfade" type="radio" default="0" label="JWUCD_AJAXCROSSFADER_SETTINGS_SMOOTH" description="JWUCD_AJAXCROSSFADER_SETTINGS_SMOOTH_DESC">
+      <option value="1">JWUCD_SHOW</option>
+      <option value="0">JWUCD_HIDE</option>
+    </param>
+    <param name="ucd_ajf_cache" type="text" default="10" label="JWUCD_AJAXCROSSFADER_SETTINGS_REFRESH" description="JWUCD_AJAXCROSSFADER_SETTINGS_REFRESH_DESC" />
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="@spacer" type="spacer" default="======== JQUERY CROSS FADER/SLIDER SETTINGS ========" label="" description="" />
+    <param name="ucd_jqf_cheight" type="text" default="300px" label="JWUCD_JQUERYCROSSFADER_SETTINGS_HEIGHT" description="JWUCD_JQUERYCROSSFADER_SETTINGS_HEIGHT_DESC" />
+    <param name="ucd_jqf_anim" type="radio" default="slide" label="JWUCD_JQUERYCROSSFADER_SETTINGS_ANIMATION" description="JWUCD_JQUERYCROSSFADER_SETTINGS_ANIMATION_DESC">
+      <option value="fade">JWUCD_FADE</option>
+      <option value="slide">JWUCD_SLIDE</option>
+    </param>
+    <param name="ucd_jqf_speed" type="text" default="750" label="JWUCD_JQUERYCROSSFADER_SETTINGS_ROTATIONSPEED" description="JWUCD_JQUERYCROSSFADER_SETTINGS_ROTATIONSPEED_DESC" />
+    <param name="ucd_jqf_timeout" type="text" default="6000" label="JWUCD_JQUERYCROSSFADER_SETTINGS_ROTATIONDELAY" description="JWUCD_JQUERYCROSSFADER_SETTINGS_ROTATIONDELAY_DESC" />
+    <param name="ucd_jqf_bgcolor" type="text" default="#ffffff" label="JWUCD_JQUERYCROSSFADER_SETTINGS_BGDCOLOR" description="JWUCD_JQUERYCROSSFADER_SETTINGS_BGDCOLOR_DESC" />
+    <param name="ucd_jqf_bottomfade" type="radio" default="0" label="JWUCD_JQUERYCROSSFADER_SETTINGS_SMOOTH" description="JWUCD_JQUERYCROSSFADER_SETTINGS_SMOOTH_DESC">
+      <option value="1">JWUCD_SHOW</option>
+      <option value="0">JWUCD_HIDE</option>
+    </param>
+  </params>
+  <files>
+    <filename module="mod_jw_ucd">mod_jw_ucd.php</filename>
+    <filename module="mod_jw_ucd">mod_jw_ucd/logo.png</filename>
+    <filename module="mod_jw_ucd">mod_jw_ucd/ajaxfader/ajaxfader.js</filename>
+    <filename module="mod_jw_ucd">mod_jw_ucd/ajaxfader/bottomfade.png</filename>
+    <filename module="mod_jw_ucd">mod_jw_ucd/ajaxfader/mod_jw_ucd.css</filename>
+    <filename module="mod_jw_ucd">mod_jw_ucd/jqueryfader/bottomfade.png</filename>
+    <filename module="mod_jw_ucd">mod_jw_ucd/jqueryfader/jquery.innerfade.js</filename>
+    <filename module="mod_jw_ucd">mod_jw_ucd/jqueryfader/jquery.js</filename>
+    <filename module="mod_jw_ucd">mod_jw_ucd/jqueryfader/mod_jw_ucd.css</filename>
+    <filename module="mod_jw_ucd">mod_jw_ucd/list/mod_jw_ucd.css</filename>
+  </files>
+  <languages>
+    <language tag="en-GB">language/en-GB/en-GB.mod_jw_ucd.ini</language>
+  </languages>
+</install>

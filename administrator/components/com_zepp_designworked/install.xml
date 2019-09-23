@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>Zepp DesignWorked</name>
+
+	<creationDate>2016</creationDate>
+	<author>Irkvlad</author>
+	<authorEmail>irkwowan@yandex.ru</authorEmail>
+	<authorUrl>http://zepp.ru</authorUrl>
+	<copyright>irkvlad</copyright>
+	<license>irkvlad</license>
+	
+	<version>0.01</version>
+	
+	<description>Компонет создан для хранения дизайнерских работ дизай-студии ЦеППелин </description>
+
+	
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>zepp_designworked.php</filename>
+		<filename>index.html</filename>
+		<filename>models/designworked.php</filename>
+		<filename>views/designworked/index.html</filename>
+		<filename>views/designworked/view.html.php</filename>
+		<filename>views/designworked/tmpl/index.html</filename>
+		<filename>views/designworked/tmpl/default.php</filename>
+		<filename>views/index.html</filename>
+	</files>
+
+	
+
+	<administration>
+		
+		<menu>Работы Дизайнеров</menu>
+		<submenu>
+			<menu view="designworkeds">Работы</menu>
+			<menu view="designworkedcats">Категории</menu>
+		</submenu>
+		
+		<files folder="admin">
+			<filename>zepp_designworked.php</filename>
+			<filename>index.html</filename>
+			
+			<filename>controller.php</filename>
+			<filename>controllers/designworked.php</filename>
+			<filename>controllers/categories.php</filename>
+			<filename>controllers/index.html</filename>
+
+			<filename>models/designworkeds.php</filename>
+			<filename>models/categories.php</filename>
+			<filename>models/editcat.php</filename>
+			<filename>models/designworked.php</filename>
+			<filename>models/index.html</filename>
+
+			<filename>tables/zepp_designworked.php</filename>
+			<filename>tables/zepp_designworked_cat.php</filename>
+			<filename>tables/index.html</filename>
+
+			<filename>views/designworked/view.html.php</filename>
+			<filename>views/designworked/tmpl/form.php</filename>
+			<filename>views/designworked/index.html</filename>
+			<filename>views/designworked/tmpl/index.html</filename>
+
+			<filename>views/designworkeds/view.html.php</filename>
+			<filename>views/designworkeds/index.html</filename>
+			<filename>views/designworkeds/tmpl/default.php</filename>
+			<filename>views/designworkeds/tmpl/index.html</filename>
+
+			<filename>views/categories/view.html.php</filename>
+			<filename>views/categories/index.html</filename>
+			<filename>views/categories/tmpl/default.php</filename>
+			<filename>views/categories/tmpl/index.html</filename>
+
+			<filename>views/editcats/view.html.php</filename>
+			<filename>views/editcats/index.html</filename>
+			<filename>views/editcats/tmpl/default.php</filename>
+			<filename>views/editcats/tmpl/index.html</filename>
+		</files>		
+	</administration>t
+</install>

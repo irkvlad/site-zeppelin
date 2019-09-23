@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>ClientContact</name>
+    <author>irkvlad</author>
+    <version>1.0</version>
+    <description>Быстрая запись нового клиента</description>
+    <files>
+        <filename module="mod_testmodule">mod_zepp_clientcontact.php</filename>
+    </files>
+</install>

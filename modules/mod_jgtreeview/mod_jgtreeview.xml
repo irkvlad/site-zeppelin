@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+  <name>JoomGallery Treeview</name>
+  <author>JoomGallery::Project Team</author>
+  <creationDate>14.07.2011</creationDate>
+  <authorEmail>team@joomgallery.net</authorEmail>
+  <authorUrl>www.joomgallery.net</authorUrl>
+  <copyright>(C) 2009 - 2011 JoomGallery::Project Team</copyright>
+  <license>This module is released under the GNU/GPL License</license>
+  <version>1.5.7.1</version>
+  <description>JoomGallery Baumansicht / JoomGallery Treeview</description>
+  <files>
+    <filename module="mod_jgtreeview">mod_jgtreeview.php</filename>
+    <filename>index.html</filename>
+    <filename>helper.php</filename>
+    <filename>LICENSE.TXT</filename>
+    <filename>changelog.php</filename>
+    <filename>tmpl/default.php</filename>
+    <filename>tmpl/index.html</filename>
+    <filename>assets/index.html</filename>
+    <filename>assets/css/index.html</filename>
+    <filename>assets/css/dtree.css</filename>
+    <filename>assets/css/jgtreeview.css</filename>
+    <filename>assets/js/index.html</filename>
+    <filename>assets/js/dtree.js</filename>
+    <filename>assets/img/index.html</filename>
+    <filename>assets/img/empty.png</filename>
+    <filename>assets/img/folder_locked.png</filename>
+    <filename>assets/img/folder_open.png</filename>
+    <filename>assets/img/folder_open_locked.png</filename>
+    <filename>assets/img/folder.png</filename>
+    <filename>assets/img/join_bottom.png</filename>
+    <filename>assets/img/join.png</filename>
+    <filename>assets/img/line.png</filename>
+    <filename>assets/img/minus_line_bottom.png</filename>
+    <filename>assets/img/minus_line.png</filename>
+    <filename>assets/img/minus.png</filename>
+    <filename>assets/img/node_locked.png</filename>
+    <filename>assets/img/node.png</filename>
+    <filename>assets/img/plus_line_bottom.png</filename>
+    <filename>assets/img/plus_line.png</filename>
+    <filename>assets/img/plus.png</filename>
+    <filename>assets/img/root.png</filename>
+    <filename>assets/img/blue_arrows/index.html</filename>
+    <filename>assets/img/blue_arrows/empty.png</filename>
+    <filename>assets/img/blue_arrows/folder_locked.png</filename>
+    <filename>assets/img/blue_arrows/folder_open.png</filename>
+    <filename>assets/img/blue_arrows/folder_open_locked.png</filename>
+    <filename>assets/img/blue_arrows/folder.png</filename>
+    <filename>assets/img/blue_arrows/join_bottom.png</filename>
+    <filename>assets/img/blue_arrows/join.png</filename>
+    <filename>assets/img/blue_arrows/line.png</filename>
+    <filename>assets/img/blue_arrows/minus_line_bottom.png</filename>
+    <filename>assets/img/blue_arrows/minus_line.png</filename>
+    <filename>assets/img/blue_arrows/minus.png</filename>
+    <filename>assets/img/blue_arrows/node_locked.png</filename>
+    <filename>assets/img/blue_arrows/node.png</filename>
+    <filename>assets/img/blue_arrows/plus_line_bottom.png</filename>
+    <filename>assets/img/blue_arrows/plus_line.png</filename>
+    <filename>assets/img/blue_arrows/plus.png</filename>
+    <filename>assets/img/blue_arrows/root.png</filename>
+    <filename>assets/img/orange_arrows/index.html</filename>
+    <filename>assets/img/orange_arrows/empty.png</filename>
+    <filename>assets/img/orange_arrows/folder_locked.png</filename>
+    <filename>assets/img/orange_arrows/folder_open.png</filename>
+    <filename>assets/img/orange_arrows/folder_open_locked.png</filename>
+    <filename>assets/img/orange_arrows/folder.png</filename>
+    <filename>assets/img/orange_arrows/join_bottom.png</filename>
+    <filename>assets/img/orange_arrows/join.png</filename>
+    <filename>assets/img/orange_arrows/line.png</filename>
+    <filename>assets/img/orange_arrows/minus_line_bottom.png</filename>
+    <filename>assets/img/orange_arrows/minus_line.png</filename>
+    <filename>assets/img/orange_arrows/minus.png</filename>
+    <filename>assets/img/orange_arrows/node_locked.png</filename>
+    <filename>assets/img/orange_arrows/node.png</filename>
+    <filename>assets/img/orange_arrows/plus_line_bottom.png</filename>
+    <filename>assets/img/orange_arrows/plus_line.png</filename>
+    <filename>assets/img/orange_arrows/plus.png</filename>
+    <filename>assets/img/orange_arrows/root.png</filename>
+    <filename>assets/img/red_flowers/index.html</filename>
+    <filename>assets/img/red_flowers/empty.png</filename>
+    <filename>assets/img/red_flowers/folder_locked.png</filename>
+    <filename>assets/img/red_flowers/folder_open.png</filename>
+    <filename>assets/img/red_flowers/folder_open_locked.png</filename>
+    <filename>assets/img/red_flowers/folder.png</filename>
+    <filename>assets/img/red_flowers/join_bottom.png</filename>
+    <filename>assets/img/red_flowers/join.png</filename>
+    <filename>assets/img/red_flowers/line.png</filename>
+    <filename>assets/img/red_flowers/minus_line_bottom.png</filename>
+    <filename>assets/img/red_flowers/minus_line.png</filename>
+    <filename>assets/img/red_flowers/minus.png</filename>
+    <filename>assets/img/red_flowers/node_locked.png</filename>
+    <filename>assets/img/red_flowers/node.png</filename>
+    <filename>assets/img/red_flowers/plus_line_bottom.png</filename>
+    <filename>assets/img/red_flowers/plus_line.png</filename>
+    <filename>assets/img/red_flowers/plus.png</filename>
+    <filename>assets/img/red_flowers/root.png</filename>
+  </files>
+  <languages>
+   <language tag="en-GB">languages/en-GB/en-GB.mod_jgtreeview.ini</language>
+   <language tag="de-DE">languages/de-DE/de-DE.mod_jgtreeview.ini</language>
+   <language tag="nl-NL">languages/nl-NL/nl-NL.mod_jgtreeview.ini</language>
+  </languages>
+  <params>
+    <param type="spacer" default="JG_TREEVIEW_COMMON_PARAMETER_LBL" label="" description="" />  
+    <param name="moduleclass_sfx" type="text" default="" label="JG_TREEVIEW_MODULE_CLASS_SUFFIX_LBL" description="JG_TREEVIEW_MODULE_CLASS_SUFFIX_DESC" />
+    <param name="cfg_itemid" type="text" default="" label="JG_TREEVIEW_ITEMID_LBL" description="JG_TREEVIEW_ITEMID_DESC"/>  
+    <param name="cfg_root_catid" type="text" default="0" label="JG_TREEVIEW_ROOT_CATID_LBL" description="JG_TREEVIEW_ROOT_CATID_DESC" />
+    <param name="cfg_name" type="text" default="" label="JG_TREEVIEW_NAME_LBL" description="JG_TREEVIEW_NAME_DESC" />
+    <param name="cfg_sort_cat" type="list" default="0" label="JG_TREEVIEW_SORT_CAT_LBL" description="JG_TREEVIEW_SORT_CAT_DESC">
+      <option value="name ASC">JG_TREEVIEW_SORT_NAME_ASC_LBL</option>
+      <option value="name DESC">JG_TREEVIEW_SORT_NAME_DESC_LBL</option>
+      <option value="cid ASC">JG_TREEVIEW_SORT_DATE_ASC_LBL</option>
+      <option value="cid DESC">JG_TREEVIEW_SORT_DATE_DESC_LBL</option>
+      <option value="ordering ASC">JG_TREEVIEW_SORT_ORDERING_ASC_LBL</option>
+      <option value="ordering DESC">JG_TREEVIEW_SORT_ORDERING_DESC_LBL</option>
+    </param>
+    <param name="cfg_sort_subcat" type="list" default="0" label="JG_TREEVIEW_SORT_SUBCAT_LBL" description="JG_TREEVIEW_SORT_SUBCAT_DESC">
+      <option value="name ASC">JG_TREEVIEW_SORT_NAME_ASC_LBL</option>
+      <option value="name DESC">JG_TREEVIEW_SORT_NAME_DESC_LBL</option>
+      <option value="cid ASC">JG_TREEVIEW_SORT_DATE_ASC_LBL</option>
+      <option value="cid DESC">JG_TREEVIEW_SORT_DATE_DESC_LBL</option>
+      <option value="ordering ASC">JG_TREEVIEW_SORT_ORDERING_ASC_LBL</option>
+      <option value="ordering DESC">JG_TREEVIEW_SORT_ORDERING_DESC_LBL</option>
+    </param>
+    <param name="cfg_blacklist_cats" type="text" default="" label="JG_TREEVIEW_BLACKLIST_CATS_LBL" description="JG_TREEVIEW_BLACKLIST_CATS_DESC" />
+    <param name="cfg_showhidden" type="radio" default="0" label="JG_TREEVIEW_SHOWHIDDEN_LBL" description="JG_TREEVIEW_SHOWHIDDEN_DESC">
+      <option value="0">JG_TREEVIEW_NO_LBL</option>
+      <option value="1">JG_TREEVIEW_YES_LBL</option>
+    </param>            
+    <param name="cfg_max_len_catname" type="text" default="0" label="JG_TREEVIEW_MAX_LEN_CATNAME_LBL" description="JG_TREEVIEW_MAX_LEN_CATNAME_DESC" />
+    <param name="cfg_show_open_close_all" type="radio" default="1" label="JG_TREEVIEW_SHOW_OPEN_CLOSE_ALL_LBL" description="JG_TREEVIEW_SHOW_OPEN_CLOSE_ALL_DESC">
+      <option value="0">JG_TREEVIEW_NO_LBL</option>
+      <option value="1">JG_TREEVIEW_YES_LBL</option>
+    </param>
+    <param name="cfg_show_always_expanded" type="radio" default="0" label="JG_TREEVIEW_SHOW_ALWAYS_EXPANDED_LBL" description="JG_TREEVIEW_SHOW_ALWAYS_EXPANDED_DESC">
+      <option value="0">JG_TREEVIEW_NO_LBL</option>
+      <option value="1">JG_TREEVIEW_YES_LBL</option>
+    </param>    
+    <param name="cfg_show_credits" type="radio" default="1" label="JG_TREEVIEW_SHOW_CREDITS_LBL" description="JG_TREEVIEW_SHOW_CREDITS_DESC">
+      <option value="0">JG_TREEVIEW_NO_LBL</option>
+      <option value="1">JG_TREEVIEW_YES_LBL</option>
+    </param>
+    <param type="spacer" default="JG_TREEVIEW_VIEW_PARAMETER_LBL" label="" description="" />
+    <param name="cfg_icon_theme" type="list" default="" label="JG_TREEVIEW_ICON_THEME_LBL" description="JG_TREEVIEW_ICON_THEME_DESC">
+      <option value="">JG_TREEVIEW_ICON_THEME_0_LBL</option>
+      <option value="blue_arrows">JG_TREEVIEW_ICON_THEME_1_LBL</option>
+      <option value="orange_arrows">JG_TREEVIEW_ICON_THEME_2_LBL</option>
+      <option value="red_flowers">JG_TREEVIEW_ICON_THEME_3_LBL</option>
+    </param>        
+    <param name="cfg_grid" type="radio" default="1" label="JG_TREEVIEW_GRID_LBL" description="JG_TREEVIEW_GRID_DESC">
+      <option value="0">JG_TREEVIEW_NO_LBL</option>
+      <option value="1">JG_TREEVIEW_YES_LBL</option>
+    </param>
+    <param name="cfg_bgcolor_active_node" type="text" default="#C0D2EC" label="JG_TREEVIEW_BGCOLOR_ACTIVE_NODE_LBL" description="JG_TREEVIEW_BGCOLOR_ACTIVE_NODE_DESC" />
+    <param name="cfg_disable_new" type="radio" default="0" label="JG_TREEVIEW_DISABLE_NEW_LBL" description="JG_TREEVIEW_DISABLE_NEW_DESC">
+      <option value="0">JG_TREEVIEW_NO_LBL</option>
+      <option value="1">JG_TREEVIEW_YES_LBL</option>
+    </param>
+  </params>
+</install>

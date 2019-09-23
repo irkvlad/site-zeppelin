@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>Zepp Ring Client</name>
+
+	<creationDate>2016</creationDate>
+	<author>Irkvlad</author>
+	<authorEmail>irkwowan@yandex.ru</authorEmail>
+	<authorUrl>http://zepp.ru</authorUrl>
+	<copyright>irkvlad</copyright>
+	<license>irkvlad</license>
+	
+	<version>0.01</version>
+	
+	<description>Компонет создан для учета поступивших заказов дизай-студии ЦеППелин и дальнейшего их распределения</description>
+
+	
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>zepp_ringclient.php</filename>
+		<filename>index.html</filename>
+		<filename>models/zepp_ringclient.php</filename>
+		<filename>views/zepp_ringclient/index.html</filename>
+		<filename>views/zepp_ringclient/view.html.php</filename>
+		<filename>views/zepp_ringclient/tmpl/index.html</filename>
+		<filename>views/zepp_ringclient/tmpl/default.php</filename>
+		<filename>views/index.html</filename>
+	</files>
+
+	
+
+	<administration>
+		
+		<menu>RingClient</menu>		
+		
+		<files folder="admin">
+			<filename>zepp_ringclient.php</filename>
+			<filename>index.html</filename>
+			
+			<filename>controller.php</filename>
+			<filename>controllers/zepp_ringclient.php</filename>
+			<filename>controllers/index.html</filename>
+			<filename>models/zepp_ringclients.php</filename>
+			<filename>models/zepp_ringclient.php</filename>
+			<filename>models/index.html</filename>
+			<filename>tables/zepp_ringclient.php</filename>
+			<filename>tables/index.html</filename>
+			<filename>views/zepp_ringclient/view.html.php</filename>
+			<filename>views/zepp_ringclient/tmpl/form.php</filename>
+			<filename>views/zepp_ringclient/index.html</filename>
+			<filename>views/zepp_ringclient/tmpl/index.html</filename>
+			<filename>views/zepp_ringclients/view.html.php</filename>
+			<filename>views/zepp_ringclients/index.html</filename>
+			<filename>views/zepp_ringclients/tmpl/default.php</filename>
+			<filename>views/zepp_ringclients/tmpl/index.html</filename>
+		</files>		
+	</administration>
+</install>

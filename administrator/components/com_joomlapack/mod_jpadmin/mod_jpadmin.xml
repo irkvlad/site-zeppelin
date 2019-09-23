@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install version="1.5.0" type="module" client="administrator" method="upgrade">
+	<name>JoomlaPack Backup Benachrichtigungs Modul</name>
+	<author>Nicholas K. Dionysopoulos</author>
+	<authorEmail>nicholas@joomlapack.net</authorEmail>
+	<authorUrl>http://www.joomlapack.de</authorUrl>
+	<creationDate>May 2009</creationDate>
+	<copyright>Copyright (c)2009 Nicholas K. Dionysopoulos / JoomlaPack Developers</copyright>
+	<license>GNU GPL v3</license>
+	<version>1.0 -de</version>
+	<description><![CDATA[
+	<hr />
+	<h1>JoomlaPack Backup Benachrichtigungs Modul</h1>
+	<p>Dies ist ein kleines handliches Modul, um ein JoomlaPack-Warnzeichen im Kontrollzentrum Ihrer Seite anzuzeigen.
+	Das Symbol zeigt eine Warnung an, falls die letzte Sicherung fehlgeschlagen oder veraltet ist. Die Ablaufzeit können Sie selbst bestimmen.
+	Klicken Sie auf das angezeigte Symbol bringt es Sie zum Abschnitt &quot;Jetzt Sichern&quot; von JoomlaPack.</p>
+	<p><strong>Wichtig!</strong> Sie müssen diese Modul <em>selbst</em> aktivieren. Gehen Sie zu Erweiterungen - Modulmanager - Administrator.
+	Veröffentlichen Sie das Modul auf der Position &quot;icon&quot; und schon ist alles erledigt.</p>
+	<hr />
+	]]></description>
+	<files>
+		<filename module="mod_jpadmin">mod_jpadmin.php</filename>
+	</files>
+	<params>
+		<param name="enablewarning" type="radio" label="LBL_WARNINGS" description="DESC_WARNINGS">
+			<option value="0">LBL_YES</option>
+			<option value="1">LBL_NO</option>
+		</param>	
+		<param name="warnfailed" type="radio" label="LBL_WARNFAILED" description="DESC_WARNFAILED">
+			<option value="0">LBL_YES</option>
+			<option value="1">LBL_NO</option>
+		</param>
+		<param name="maxbackupperiod" type="text" label="LBL_PERIOD" description="DESC_PERIOD" size="5" />	
+	</params>	
+</install>

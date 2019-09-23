@@ -1,0 +1,135 @@
+ul.cgca-adminslist{margin: 0; list-style: none}
+ul.cgca-adminslist li{padding: 2px}
+li.cgca-admindetails{font-size: 10px; margin-bottom: 5px}
+
+form.fiofilter {
+    background-color: #F6F6F6;
+    margin: 1px;
+    padding: 3px;
+}
+
+table.adminlist {
+    background-color: #E7E7E7;
+    border-spacing: 1px;
+    color: #666666;
+    width: 100%;
+}
+
+tr {
+    background-color: #FFFFFF;
+    text-align: left;
+}
+tr.row1 {
+    background: none repeat scroll 0 0 #F9F9F9;
+    border-top: 1px solid #F7F9Ff;
+}
+
+table.adminlist  th{
+background-color:#F6F6F6;
+font-weight: bold;
+padding: 0px;
+}
+
+a:link {
+    color: #0B55C4;
+    text-decoration: none;
+}
+
+/*********************************/
+
+table.admintable td {
+    padding: 3px;
+}
+
+table.admintable td.key, td.key1, table.admintable td.paramlist_key {
+    background-color: #F6F6F6;
+    border-bottom: 1px solid #E9E9E9;
+    border-right: 1px solid #E9E9E9;
+    color: #666666;
+    font-weight: bold;
+    text-align: right;
+    width: 140px;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+td.key1 {
+    text-align: left;
+}
+
+table.admintable td {
+    padding: 3px;
+}
+legend{
+display: none;
+}
+/***************************************************/
+ @media print {
+ 
+ 
+form.fiofilter {
+   display: none;
+    background-color: #000;
+    color: #000;
+}
+
+table.adminlist {
+   display: none;
+   background-color: #000;
+    color: #000;
+}
+
+tr {
+   display: none;
+   background-color: #000;
+    color: #000;
+}
+tr.row1 {
+   display: none;
+   background-color: #000;
+    color: #000;
+}
+
+table.adminlist  th{
+display: none;
+background-color: #000;
+    color: #000;
+}
+
+a:link {
+   display: none;
+   background-color: #000;
+    color: #000;
+}
+
+/*********************************/
+
+table.admintable td {
+   display: none;
+   background-color: #000;
+    color: #000;
+}
+
+table.admintable td.key, td.key1, table.admintable td.paramlist_key {
+   display: none;
+   background-color: #000;
+    color: #000;
+}
+
+td.key1 {
+    display: none;
+    background-color: #000;
+    color: #000;
+}
+
+table.admintable td {
+ display: none;
+ background-color: #000;
+    color: #000;
+}
+legend{
+display: none;
+background-color: #000;
+    color: #000;
+}
+ 
+ }

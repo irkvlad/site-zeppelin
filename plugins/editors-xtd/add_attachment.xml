@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="editors-xtd">
+	<name>Editor Button - AddAttachment</name>
+	<author>Jonathan M. Cameron</author>
+	<creationDate>August 17, 2008</creationDate>
+	<copyright>(C) 2007, 2008 Jonathan M. Cameron. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>jmcameron@jmcameron.net</authorEmail>
+	<authorUrl>http://joomlacode.org/gf/project/attachments/</authorUrl>
+	<version>1.3.4</version>
+	<description>ADD ATTACHMENT BUTTON PLUGIN INSTALLED<![CDATA[
+    <br/><a href="http://www.netshop24.ru">Joomla</a>
+    ]]></description>
+	<languages>
+		<language tag="en-GB">en-GB.plg_editors-xtd_add_attachment.ini</language>
+	</languages>
+	<files>
+		<filename plugin="add_attachment">add_attachment.php</filename>
+		<filename>add_attachment.png</filename>
+		<filename>add_attachment.css</filename>
+	</files>
+</install>

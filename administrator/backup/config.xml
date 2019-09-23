@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+		<param name="who_can_see" type="list" default="logged_in"
+		       label="WHO CAN SEE ATTACHMENTS"
+		       description="WHO CAN SEE ATTACHMENTS DESCRIPTION">
+			<option value="logged_in">ANY LOGGED IN USER</option>
+			<option value="anyone">ANYONE</option>
+		</param>
+		<param name="who_can_add" type="list" default="author"
+		       label="WHO CAN ADD ATTACHMENTS"
+		       description="WHO CAN ADD ATTACHMENTS DESCRIPTION">
+			<option value="author">ARTICLE AUTHOR ONLY</option>
+			<option value="logged_in">ANY LOGGED IN USER</option>
+		</param>
+		<param name="publish_default" type="radio" default="0"
+		       label="ATTACHMENTS PUBLISHED BY DEFAULT"
+		       description="ATTACHMENTS PUBLISHED BY DEFAULT DESCRIPTION">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="auto_publish_warning" type="textarea" default=""
+		       label="AUTO PUBLISH WARNING" rows="2" cols="40"
+		       description="AUTO PUBLISH WARNING DESCRIPTION">
+		</param>
+		<param name="show_column_titles" type="radio" default="0"
+		       label="SHOW COLUMN TITLES"
+		       description="SHOW COLUMN TITLES DESCRIPTION">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="show_description" type="radio" default="1"
+		       label="SHOW ATTACHMENT DESCRIPTION"
+		       description="SHOW ATTACHMENT DESCRIPTION DESCRIPTION">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="show_file_size" type="radio" default="1"
+		       label="SHOW ATTACHMENT FILE SIZE"
+		       description="SHOW ATTACHMENT FILE SIZE DESCRIPTION">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="show_downloads" type="radio" default="0"
+		       label="SHOW NUMBER OF DOWNLOADS"
+		       description="SHOW NUMBER OF DOWNLOADS DESCRIPTION">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="show_modification_date" type="radio" default="0"
+		       label="SHOW FILE MODIFICATION DATE"
+		       description="SHOW FILE MODIFICATION DATE DESCRIPTION">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="mod_date_format" type="text" default="%x %H:%M"
+		       label="FORMAT STRING FOR MODIFICATION DATE" size="30"
+		       description="FORMAT STRING FOR MODIFICATION DATE DESCRIPTION">
+		</param>
+		<param name="sort_order" type="list" default="filename"
+		       label="ATTACHMENTS LIST ORDER"
+		       description="ATTACHMENTS LIST ORDER DESCRIPTION">
+			<option value="filename">SORT FILENAME</option>
+			<option value="file_size">SORT FILE SIZE</option>
+			<option value="file_size_desc">SORT FILE SIZE DESCENDING</option>
+			<option value="description">SORT DESCRIPTION</option>
+			<option value="create_date">SORT CREATE DATE</option>
+			<option value="create_date_desc">SORT CREATE DATE DESCENDING</option>
+			<option value="modification_date">SORT MODIFICATION DATE</option>
+			<option value="modification_date_desc">SORT MODIFICATION DATE DESCENDING</option>
+			<option value="id">SORT ATTACHMENT ID</option>
+			<option value="user_field_1">USER DEFINED FIELD 1</option>
+			<option value="user_field_2">USER DEFINED FIELD 2</option>
+			<option value="user_field_3">USER DEFINED FIELD 3</option>
+		</param>
+		<param name="user_field_1_name" type="text" default=""
+		       label="USER DEFINED FIELD 1 NAME" size="40"
+		       description="USER DEFINED FIELD NAME DESCRIPTION">
+		</param>
+		<param name="user_field_2_name" type="text" default=""
+		       label="USER DEFINED FIELD 2 NAME" size="40"
+		       description="USER DEFINED FIELD NAME DESCRIPTION">
+		</param>
+		<param name="user_field_3_name" type="text" default=""
+		       label="USER DEFINED FIELD 3 NAME" size="40"
+		       description="USER DEFINED FIELD NAME DESCRIPTION">
+		</param>
+		<param name="max_filename_length" type="text" default="0"
+		       label="MAX FILENAME LENGTH" size="2"
+		       description="MAX FILENAME LENGTH DESCRIPTION">
+		</param>
+		<param name="attachments_table_style" type="text" default="attachmentsList"
+		       label="CSS STYLE FOR ATTACHMENTS TABLES" size="40"
+		       description="CSS STYLE FOR ATTACHMENTS TABLES DESCRIPTION">
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="file_link_open_mode" type="radio" default="in_same_window"
+		       label="FILE LINK OPEN MODE"
+		       description="FILE LINK OPEN MODE DESCRIPTION">
+			<option value="in_same_window">IN SAME WINDOW</option>
+			<option value="new_window">IN NEW WINDOW</option>
+		</param>
+		<param name="prepend" type="list" default="article_id"
+		       label="PREPEND TO SYSTEM FILENAME"
+		       description="PREPEND TO SYSTEM FILENAME DESCRIPTION">
+			<option value="article_id">ARTICLE ID</option>
+			<option value="attachment_id">ATTACHMENT ID</option>
+			<option value="nothing">NOTHING</option>
+		</param>
+		<param name="attachments_subdir" type="text" default="attachments"
+		       label="SUBDIRECTORY FOR UPLOADS" size="80"
+		       description="SUBDIRECTORY FOR UPLOADS DESCRIPTION">
+		</param>
+		<param name="attachments_titles" type="textarea" default=""
+			   label="CUSTOM TITLES FOR ATTACHMENTS LISTS" rows="3" cols="40"
+			   description="CUSTOM TITLES FOR ATTACHMENTS LISTS DESCRIPTION">
+		</param>
+		<param name="hide_attachments_for" type="text" default=""
+		       label="HIDE ATTACHMENTS FOR" size="255"
+		       description="HIDE ATTACHMENTS FOR DESCRIPTION">
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="secure" type="radio" default="0"
+		       label="SECURE ATTACHMENT DOWNLOADS"
+		       description="SECURE ATTACHMENT DOWNLOADS DESCRIPTION">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="download_mode" type="radio" default="inline"
+		       label="DOWNLOAD MODE FOR SECURE DOWNLOADS"
+		       description="DOWNLOAD MODE FOR SECURE DOWNLOADS DESCRIPTION">
+			<option value="inline">INLINE</option>
+			<option value="attachment">ATTACHMENT</option>
+		</param>
+		<param name="register_url" type="text"
+               default="index.php?option=com_user&amp;task=register"
+		       label="URL TO REGISTER" size="255"
+		       description="URL TO REGISTER DESCRIPTION">
+		</param>
+	</params>
+</config>

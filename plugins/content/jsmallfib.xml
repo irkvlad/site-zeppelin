@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+    <name>jsmallfib</name>
+    <author>Enrico Sandoli</author>
+    <creationDate>March 2009</creationDate>
+    <copyright>Copyright (c) 2009 Enrico Sandoli. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>jsmall@sandoli.net</authorEmail>
+    <authorUrl>http://www.jsmallsoftware.com</authorUrl>
+    <version>1.0.31</version>
+    <description>JSMALLFIBPLUGINDESC</description>
+
+    <files>
+        <filename plugin="jsmallfib">jsmallfib.php</filename>
+        <filename>jsmallfib/addfile.png</filename>
+        <filename>jsmallfib/addfolder.png</filename>
+        <filename>jsmallfib/arrow_down.png</filename>
+        <filename>jsmallfib/arrow_right.png</filename>
+        <filename>jsmallfib/arrow_up.png</filename>
+        <filename>jsmallfib/bmp.png</filename>
+	<filename>jsmallfib/btn_donateCC_LG.gif</filename>
+        <filename>jsmallfib/css.png</filename>
+        <filename>jsmallfib/delete.png</filename>
+        <filename>jsmallfib/doc.png</filename>
+        <filename>jsmallfib/dwg.png</filename>
+        <filename>jsmallfib/dxf.png</filename>
+        <filename>jsmallfib/exe.png</filename>
+        <filename>jsmallfib/folder.png</filename>
+        <filename>jsmallfib/gif.png</filename>
+        <filename>jsmallfib/gz.png</filename>
+        <filename>jsmallfib/htm.png</filename>
+        <filename>jsmallfib/html.png</filename>
+        <filename>jsmallfib/index.html</filename>
+        <filename>jsmallfib/jpeg.png</filename>
+        <filename>jsmallfib/jpg.png</filename>
+        <filename>jsmallfib/js.png</filename>
+        <filename>jsmallfib/jsmallsoftware.png</filename>
+        <filename>jsmallfib/log_disabled.png</filename>
+        <filename>jsmallfib/log_found.png</filename>
+        <filename>jsmallfib/log_not_found.png</filename>
+        <filename>jsmallfib/mp3.png</filename>
+        <filename>jsmallfib/mpeg.png</filename>
+        <filename>jsmallfib/mpg.png</filename>
+        <filename>jsmallfib/null.gif</filename>
+        <filename>jsmallfib/pdf.png</filename>
+        <filename>jsmallfib/png.png</filename>
+        <filename>jsmallfib/ppt.png</filename>
+        <filename>jsmallfib/psd.png</filename>
+        <filename>jsmallfib/rename.png</filename>
+        <filename>jsmallfib/skp.png</filename>
+        <filename>jsmallfib/sql.png</filename>
+        <filename>jsmallfib/tar.png</filename>
+        <filename>jsmallfib/tick.png</filename>
+        <filename>jsmallfib/tif.png</filename>
+        <filename>jsmallfib/txt.png</filename>
+        <filename>jsmallfib/unknown.png</filename>
+        <filename>jsmallfib/upperdir.png</filename>
+        <filename>jsmallfib/warning.png</filename>
+        <filename>jsmallfib/xls.png</filename>
+        <filename>jsmallfib/xml.png</filename>
+        <filename>jsmallfib/xsl.png</filename>
+        <filename>jsmallfib/zip.png</filename>
+    </files>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB.plg_content_jsmallfib.ini</language>
+        <language tag="de-DE">de-DE.plg_content_jsmallfib.ini</language>
+        <language tag="es-ES">es-ES.plg_content_jsmallfib.ini</language>
+        <language tag="fr-FR">fr-FR.plg_content_jsmallfib.ini</language>
+        <language tag="it-IT">it-IT.plg_content_jsmallfib.ini</language>
+        <language tag="sv-SE">sv-SE.plg_content_jsmallfib.ini</language>
+    </languages>
+
+    <params>
+	<param name="default_path" type="text" size ="60" default="jsmallfib_top" label="DEFAULT_PATH" description="DEFAULT_PATH_DESC" />
+        <param name="is_path_relative" type="radio" default="1" label="IS_PATH_RELATIVE" description="IS_PATH_RELATIVE_DESC">
+            <option value="0">USE_ABSOLUTE_PATH</option>
+            <option value="1">USE_RELATIVE_PATH</option>
+        </param>
+        <param name="default_visitor_access_rights" type="list" default="0" label="DEFAULT_VISITOR_ACCESS_RIGHTS" description="DEFAULT_VISITOR_ACCESS_RIGHTS_DESC">
+            <option value="0">MAY_NOT_ACCESS_REPOSITORY_AT_ALL</option>
+            <option value="1">CAN_ONLY_NAVIGATE_THE_REPOSITORY</option>
+	    <option value="2">MAY_CREATE_FOLDERS_AND_UPLOAD_FILES</option>
+	    <option value="3">MAY_DELETE_FILES_BUT_NOT_FOLDERS</option>
+	    <option value="4">MAY_DELETE_FILES_AND_EMPTY_FOLDERS</option>
+	    <option value="5">MAY_VIEW_LOGS</option>
+        </param>
+        <param name="default_reguser_access_rights" type="list" default="4" label="DEFAULT_REGISTERED_USER_ACCESS_RIGHTS" description="DEFAULT_REGISTERED_USER_ACCESS_RIGHTS_DESC">
+            <option value="0">MAY_NOT_ACCESS_REPOSITORY_AT_ALL</option>
+            <option value="1">CAN_ONLY_NAVIGATE_THE_REPOSITORY</option>
+	    <option value="2">MAY_CREATE_FOLDERS_AND_UPLOAD_FILES</option>
+	    <option value="3">MAY_DELETE_FILES_BUT_NOT_FOLDERS</option>
+	    <option value="4">MAY_DELETE_FILES_AND_EMPTY_FOLDERS</option>
+	    <option value="5">MAY_VIEW_LOGS</option>
+        </param>
+        <param name="hidden_files" type="textarea" cols="30" rows="6" default=".htaccess, .ftpquota, *.php" label="HIDDEN_FILES" description="HIDDEN_FILES_DESC" />
+        <param name="hidden_folders" type="textarea" cols="30" rows="6" default="" label="HIDDEN_FOLDERS" description="HIDDEN_FOLDERS_DESC" />
+
+        <param name="date_format" type="list" default="dd_mm_yyyy_slashsep" label="DATE_FORMAT" description="DATE_FORMAT_DESC">
+            <option value="dd_mm_yyyy_dashsep">dd-mm-yyyy</option>
+            <option value="dd_mm_yyyy_pointsep">dd.mm.yyyy</option>
+	    <option value="dd_mm_yyyy_slashsep">dd/mm/yyyy</option>
+            <option value="yyyy_mm_dd_dashsep">yyyy-mm-dd</option>
+            <option value="yyyy_mm_dd_pointsep">yyyy.mm.dd</option>
+	    <option value="yyyy_mm_dd_slashsep">yyyy/mm/dd</option>
+	    <option value="mm_dd_yyyy_dashsep">mm-dd-yyyy</option>
+	    <option value="mm_dd_yyyy_pointsep">mm.dd.yyyy</option>
+	    <option value="mm_dd_yyyy_slashsep">mm/dd/yyyy</option>
+        </param>
+	<param name="display_seconds" type="radio" default="1" label="DISPLAY_SECONDS" description="DISPLAY_SECONDS_DESC">
+            <option value="0">NO</option>
+            <option value="1">YES</option>
+        </param>
+
+        <param name="table_width" type="text" size ="15" default="680" label="MAIN_DISPLAY_WIDTH" description="MAIN_DISPLAY_WIDTH_DESC" />
+        <param name="row_height" type="text" size ="15" default="30" label="ROW_HEIGHT" description="ROW_HEIGHT_DESC" />
+        <param name="highlighted_color" type="text" size ="15" default="FFD" label="HIGHLIGHTED_COLOR" description="HIGHLIGHTED_COLOR_DESC" />
+        <param name="oddrows_color" type="text" size ="15" default="F9F9F9" label="ODDROWS_COLOR" description="ODDROWS_COLOR_DESC" />
+        <param name="evenrows_color" type="text" size ="15" default="FFFFFF" label="EVENROWS_COLOR" description="EVENROWS_COLOR_DESC" />
+
+        <param name="framebox_bgcolor" type="text" size ="15" default="FFFFFF" label="FRAMEBOX_BGCOLOR" description="FRAMEBOX_BGCOLOR_DESC" />
+        <param name="framebox_linecolor" type="text" size ="15" default="CDD2D6" label="FRAMEBOX_LINECOLOR" description="FRAMEBOX_LINECOLOR_DESC" />
+        <param name="framebox_border" type="text" size ="15" default="1" label="FRAMEBOX_BORDER" description="FRAMEBOX_BORDER_DESC" />
+        <param name="framebox_linetype" type="list" default="solid" label="FRAMEBOX_LINETYPE" description="FRAMEBOX_LINETYPE_DESC">
+            <option value="solid">SOLID</option>
+            <option value="dotted">DOTTED</option>
+            <option value="dashed">DASHED</option>
+            <option value="double">DOUBLE</option>
+            <option value="groove">GROOVE</option>
+            <option value="ridge">RIDGE</option>
+            <option value="inset">INSET</option>
+            <option value="outset">OUTSET</option>
+        </param>
+	
+        <param name="header_bgcolor" type="text" size ="15" default="FFFFFF" label="HEADER_BGCOLOR" description="HEADER_BGCOLOR_DESC" />
+
+        <param name="line_bgcolor" type="text" size ="15" default="CDD2D6" label="LINE_BGCOLOR" description="LINE_BGCOLOR_DESC" />
+        <param name="line_height" type="text" size ="15" default="1" label="LINE_HEIGHT" description="LINE_HEIGHT_DESC" />
+
+	<param name="uploadbox_bgcolor" type="text" size ="15" default="F8F9FA" label="UPLOADBOX_BGCOLOR" description="UPLOADBOX_BGCOLOR_DESC" />
+        <param name="uploadbox_linecolor" type="text" size ="15" default="CDD2D6" label="UPLOADBOX_LINECOLOR" description="UPLOADBOX_LINECOLOR_DESC" />
+        <param name="uploadbox_border" type="text" size ="15" default="1" label="UPLOADBOX_BORDER" description="UPLOADBOX_BORDER_DESC" />
+        <param name="uploadbox_linetype" type="list" default="solid" label="UPLOADBOX_LINETYPE" description="UPLOADBOX_LINETYPE_DESC">
+            <option value="solid">SOLID</option>
+            <option value="dotted">DOTTED</option>
+            <option value="dashed">DASHED</option>
+            <option value="double">DOUBLE</option>
+            <option value="groove">GROOVE</option>
+            <option value="ridge">RIDGE</option>
+            <option value="inset">INSET</option>
+            <option value="outset">OUTSET</option>
+        </param>
+
+
+        <param name="inputbox_bgcolor" type="text" size ="15" default="FFFFFF" label="INPUTBOX_BGCOLOR" description="INPUTBOX_BGCOLOR_DESC" />
+        <param name="inputbox_linecolor" type="text" size ="15" default="CDD2D6" label="INPUTBOX_LINECOLOR" description="INPUTBOX_LINECOLOR_DESC" />
+        <param name="inputbox_border" type="text" size ="15" default="1" label="INPUTBOX_BORDER" description="INPUTBOX_BORDER_DESC" />
+        <param name="inputbox_linetype" type="list" default="solid" label="INPUTBOX_LINETYPE" description="INPUTBOX_LINETYPE_DESC">
+            <option value="solid">SOLID</option>
+            <option value="dotted">DOTTED</option>
+            <option value="dashed">DASHED</option>
+            <option value="double">DOUBLE</option>
+            <option value="groove">GROOVE</option>
+            <option value="ridge">RIDGE</option>
+            <option value="inset">INSET</option>
+            <option value="outset">OUTSET</option>
+        </param>
+	
+        <param name="errorbox_bgcolor" type="text" size ="15" default="FFE4E1" label="ERRORBOX_BGCOLOR" description="ERRORBOX_BGCOLOR_DESC" />
+        <param name="errorbox_linecolor" type="text" size ="15" default="CDD2D6" label="ERRORBOX_LINECOLOR" description="ERRORBOX_LINECOLOR_DESC" />
+        <param name="errorbox_border" type="text" size ="15" default="1" label="ERRORBOX_BORDER" description="ERRORBOX_BORDER_DESC" />
+        <param name="errorbox_linetype" type="list" default="solid" label="ERRORBOX_LINETYPE" description="ERRORBOX_LINETYPE_DESC">
+            <option value="solid">SOLID</option>
+            <option value="dotted">DOTTED</option>
+            <option value="dashed">DASHED</option>
+            <option value="double">DOUBLE</option>
+            <option value="groove">GROOVE</option>
+            <option value="ridge">RIDGE</option>
+            <option value="inset">INSET</option>
+            <option value="outset">OUTSET</option>
+        </param>
+	
+	<param name="log_uploads" type="radio" default="0" label="LOG_UPLOADS" description="LOG_UPLOADS_DESC">
+            <option value="0">NO</option>
+            <option value="1">YES</option>
+        </param>
+        <param name="log_downloads" type="radio" default="0" label="LOG_DOWNLOADS" description="LOG_DOWNLOADS_DESC">
+            <option value="0">NO</option>
+            <option value="1">YES</option>
+        </param>
+        <param name="log_removedfolders" type="radio" default="0" label="LOG_REMOVEDFOLDERS" description="LOG_REMOVEDFOLDERS_DESC">
+            <option value="0">NO</option>
+            <option value="1">YES</option>
+        </param>
+        <param name="log_removedfiles" type="radio" default="0" label="LOG_REMOVEDFILES" description="LOG_REMOVEDFILES_DESC">
+            <option value="0">NO</option>
+            <option value="1">YES</option>
+        </param>
+        <param name="log_newfolders" type="radio" default="0" label="LOG_NEWFOLDERS" description="LOG_NEWFOLDERS_DESC">
+            <option value="0">NO</option>
+            <option value="1">YES</option>
+        </param>
+        <param name="log_newfoldernames" type="radio" default="0" label="LOG_NEWFOLDERNAMES" description="LOG_NEWFOLDERNAMES_DESC">
+            <option value="0">NO</option>
+            <option value="1">YES</option>
+        </param>
+        <param name="log_newfilenames" type="radio" default="0" label="LOG_NEWFILENAMES" description="LOG_NEWFILENAMES_DESC">
+            <option value="0">NO</option>
+            <option value="1">YES</option>
+        </param>
+        <param name="log_highlighted_color" type="text" size ="15" default="FF6600" label="LOG_HIGHLIGHTED_COLOR" description="LOG_HIGHLIGHTED_COLOR_DESC" />
+        <param name="show_help_link" type="radio" default="1" label="SHOW_HELP_LINK" description="SHOW_HELP_LINK_DESC">
+            <option value="0">NO</option>
+            <option value="1">YES</option>
+        </param>
+    </params>
+</install>

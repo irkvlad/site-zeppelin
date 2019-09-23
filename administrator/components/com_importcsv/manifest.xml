@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+	<name>Import CSV</name>
+	<license>Open Source License, GPL v2 based</license>
+	<author>Nicolas GRILLET</author>
+	<authorEmail>n.grillet@devictio.fr</authorEmail>
+	<authorUrl>http://www.erreurs404.net</authorUrl>
+	<creationDate>2009</creationDate>
+	<copyright>2008 - 2009</copyright>
+	<version>0.8</version>
+	<description>
+		Component that allows you to import the content CSV or XML file in your article 
+	</description>
+	<installfile>install/install.php</installfile>
+	<uninstallfile>install/uninstall.php</uninstallfile>
+    <files />
+	<languages />
+	<media />
+
+	<administration>
+        <files folder="admin">
+                <folder>views</folder>
+                <folder>install</folder>
+                <filename>controller.php</filename>
+                <filename>index.html</filename>
+                <filename>importcsv.php</filename>
+        </files>
+		<languages folder="admin/languages">
+            <language tag="en-GB">en-GB.com_importcsv.ini</language>
+            <language tag="fr-FR">fr-FR.com_importcsv.ini</language>
+    	</languages>
+ 	</administration>
+
+	<params />
+
+	<modules>
+	</modules>
+	
+	<plugins>
+		<plugin plugin="importcsv" order="-100" group="editors-xtd">
+			<files folder="plg_importcsv">
+                <file plugin="importcsv">importcsv.php</file>
+                <file>importcsv.xml</file>
+                <file>index.html</file>
+                <folder>importcsv</folder>
+			</files>
+
+			<languages folder="plg_importcsv/languages">
+				<language tag="en-GB">en-GB.plg_editors-xtd_importcsv.ini</language>
+				<language tag="fr-FR">fr-FR.plg_editors-xtd_importcsv.ini</language>
+			</languages>
+
+			<media />
+		</plugin>
+	</plugins>
+	
+	<check>
+		<directory>/modules</directory>
+		<directory>/plugins/content</directory>
+		<directory>/plugins/system</directory>
+		<extension name="importcsv" type="plugins" field="published" value="1">element='importcsv'</extension>
+	</check>
+</install>

@@ -1,0 +1,164 @@
+/* Styles for the main list of attachments in the administrative back end */
+
+table.adminlist th { 
+    text-align: left;
+    border-bottom: 0; 
+}
+table.adminlist th.at_published   { text-align: center; }
+table.adminlist th.at_filename    { text-align: left; }
+table.adminlist th.at_description { text-align: left; }
+table.adminlist th.at_user_field   { text-align: left; }
+table.adminlist th.at_file_type   { text-align: center; }
+table.adminlist th.at_file_size   { text-align: center; }
+table.adminlist th.at_create_date { text-align: center; }
+table.adminlist th.at_mod_date    { text-align: center; }
+table.adminlist th.at_downloads   { text-align: center; }
+
+table.adminlist td { 
+    text-align: left;
+    border-bottom: 0; 
+}
+table.adminlist td.at_published   { text-align: center; }
+
+table.adminlist td.at_filename { 
+    text-align: left; 
+    font-size: 125%; 
+}
+table.adminlist td.at_filename a img { 
+    vertical-align: text-bottom; 
+}
+
+table.adminlist td.at_description { text-align: left; }
+table.adminlist td.at_user_field   { text-align: left; }
+table.adminlist td.at_file_type   { text-align: center; }
+table.adminlist td.at_file_size   { text-align: center; }
+table.adminlist td.at_create_date { text-align: center; }
+table.adminlist td.at_mod_date    { text-align: center; }
+table.adminlist td.at_downloads   { text-align: center; }
+
+
+table.adminlist td.at_articlesep {
+	height: 0.8em;
+	background-color: #DDD;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #BBB;
+	font-weight: bold;
+}
+
+
+/* For the link to download a file */
+
+a.downloadAttach  {
+    margin-left: 0px;
+	font-size: 80%;
+    color : red; 
+	text-decoration: none; 
+}
+a.downloadAttach:link    { color : red; text-decoration: none; }
+a.downloadAttach:visited { color : red; text-decoration: none; }
+a.downloadAttach:hover   { color : red; text-decoration: underline; }
+a.downloadAttach:active  { color : red; text-decoration: none; }
+
+
+
+/* For the link to add another attachment to an article */
+
+a.addAttach   { 
+	font-weight: normal;
+	color: red;
+	text-decoration: none;
+}
+a.addAttach:link    { color : red; text-decoration: none; }
+a.addAttach:visited { color : red; text-decoration: none; } 
+a.addAttach:hover   { color : red; text-decoration: underline; }
+a.addAttach:active  { color : red; text-decoration: none; } 
+
+a.addAttach img {
+	vertical-align: text-bottom;
+}
+
+
+/* For the link to change the article */
+
+a.changeButton  {
+    padding-top: 1px;
+    padding-top: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-left: 20px;
+	font-size: 90%;
+    color : #333333;
+	text-decoration: none;
+    background-color: #CCCCCC;
+    border: 1px solid #888888;
+}
+a.changeButton:link    { color : #333333; text-decoration: none; }
+a.changeButton:visited { color : #333333; text-decoration: none; }
+a.changeButton:hover   { color : #333333; text-decoration: none; background-color: #DDDDDD; }
+a.changeButton:active  { color : #333333; text-decoration: none; }
+
+a.modal-button {
+    padding-top: 1px;
+    padding-top: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: #333333;
+    background-color: #CCCCCC;
+    border: 1px solid #888888;
+    font-weight: bold;
+}
+
+a.modal-button:link    { color: #333333; text-decoration: none; }
+a.modal-button:hover   { color: #333333; text-decoration: none; background-color: #DDDDDD; }
+a.modal-button:visited { color: #333333; text-decoration: none; }
+a.modal-button:active  { color: #333333; text-decoration: none; }
+
+
+/* For the upload attachment form */
+
+form.attachmentsBackend {
+    margin-top: 10px;
+    margin-left: -8px;
+}
+
+form.attachmentsBackend legend {
+    font-size: 140%;
+    font-weight: bold;
+}
+
+
+/* Styles for attachments admin */
+div.attachmentsAdmin {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+div.attachmentsAdmin h1 {
+    line-height: normal;
+    font-size: 200%;
+    font-weight: bold;
+    color: #000088;
+}
+
+div.attachmentsAdmin h2 {
+    line-height: normal;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+div.attachmentsAdmin li a         { padding: 2px; }
+div.attachmentsAdmin li a:link    { color: #0000FF; text-decoration: none; }
+div.attachmentsAdmin li a:hover   { 
+   color: #0000FF; text-decoration: none; 
+   background-color: #DDDDDD;
+   }
+div.attachmentsAdmin li a:visited { color: #0000FF; text-decoration: none; }
+div.attachmentsAdmin li a:active  { color: #0000FF; text-decoration: none; }
+
+/* For icons */
+
+.icon-48-attachments  { background-image: url(../../components/com_attachments/attachments_logo48.png); }
+
+.icon-16-attachments  { background-image: url(../../components/com_attachments/icon-16-attachments.png); }
+
+.icon-32-admin        { background-image: url(../../components/com_attachments/attachments_admin32.png); }

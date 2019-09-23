@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+  <layout title="JGA_LAYOUT_FAVOURITES_LIST">
+    <message>
+      <![CDATA[JGA_LAYOUT_FAVOURITES_LIST_DESC]]>
+    </message>
+  </layout>
+  <state>
+    <name>JGA_LAYOUT_FAVOURITES_LIST_STATE</name>
+    <description>JGA_LAYOUT_FAVOURITES_LIST_DESC_STATE</description>
+    <params>
+      <param name="disable_global_info" type="radio" default="0" label="JGA_COMMON_DISABLE_GLOBAL_INFO" description="JGA_COMMON_DISABLE_GLOBAL_INFO_DESC">
+        <option value="0">NO</option>
+        <option value="1">YES</option>
+      </param>
+    </params>
+  </state>
+</metadata>

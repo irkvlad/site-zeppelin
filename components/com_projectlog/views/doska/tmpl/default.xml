@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="Category Layout">
+        <message>
+            <![CDATA[Layout showing entries of a single project type]]>
+        </message>
+    </layout>
+    <state>
+        <name>Doska</name>
+        <description>Doska</description>
+        <url addpath="/administrator/components/com_projectlog/elements">
+            <param name="id" type="category" default="0" label="Doska" description="Non select category."/>
+        </url>
+    </state>
+</metadata>

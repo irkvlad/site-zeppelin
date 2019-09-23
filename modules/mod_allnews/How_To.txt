@@ -1,0 +1,12 @@
+"FAQs"
+
+    status101 wrote: As a tip to maybe save others searching... I also got a whole pile of errors: Warning: Invalid argument supplied for foreach() in /joomla/components/com_content/helpers/route.php on line 106
+    I found a solution to this in another post: http://www.flexicontent.org/phpbb/viewtopic.php?f=29&t=10
+	
+--------------------------------------------------------------------
+
+	carloman wrote: Salut à tous les deux ! Suis désolé de revenir la-dessus mais je n'arrive vraiment pas à utiliser l'option "évenement à venir" !! Quelle est la procédure exacte ? Merci et encore bravo pour ce mod !
+	
+	micker wrote: hello pour l'instant il faut mettre une date de création en fonction du départ de ton evenement et une date de fin de publication en fonction de la date de fin de ton evenement... et ca roule a+
+	
+--------------------------------------------------------------------

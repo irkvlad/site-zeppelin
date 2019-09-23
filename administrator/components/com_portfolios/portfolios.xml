@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>Portfolios</name>
+	<creationDate>2012</creationDate>
+	<author>Loschilov</author>
+	<authorEmail>irkwowan@yandex.ru</authorEmail>
+	<authorUrl>www.zepp.ru</authorUrl>
+	<copyright>Copyright © 2012 - All rights reserved ZePPelin.</copyright>
+	<license>ZePPelin</license>
+	<version>1.0.0</version>
+	<description><![CDATA[Portfolios]]></description>
+	<files folder="frontend">
+		<filename>assets/style.css</filename>
+		<filename>assets/index.html</filename>
+		<filename>models/portfolios.php</filename>
+		<filename>models/index.html</filename>
+		<filename>views/portfolios/index.html</filename>
+		<filename>views/portfolios/metadata.xml</filename>
+		<filename>views/portfolios/view.html.php</filename>
+		<filename>views/portfolios/tmpl/default.xml</filename>
+		<filename>views/portfolios/tmpl/default.php</filename>
+		<filename>views/portfolios/tmpl/index.html</filename>
+		<filename>views/index.html</filename>
+		<filename>index.html</filename>
+		<filename>portfolios.php</filename>
+		<filename>controller.php</filename>
+	</files>
+	<languages folder="languages-front">
+		<language tag="ru-RU">ru-RU/ru-RU.com_portfolios.ini</language>
+	</languages>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<administration>
+		<menu>Portfolio</menu>
+		<files folder="backend">
+			<filename>models/portfolios.php</filename>
+			<filename>models/index.html</filename>
+			<filename>tables/portfolios.php</filename>
+			<filename>tables/index.html</filename>
+			<filename>views/portfolio/index.html</filename>
+			<filename>views/portfolio/view.html.php</filename>
+			<filename>views/portfolio/tmpl/default.php</filename>
+			<filename>views/portfolio/tmpl/index.html</filename>
+			<filename>views/portfolios/index.html</filename>
+			<filename>views/portfolios/view.html.php</filename>
+			<filename>views/portfolios/tmpl/default.php</filename>
+			<filename>views/portfolios/tmpl/index.html</filename>
+			<filename>views/index.html</filename>
+			<filename>index.html</filename>
+			<filename>portfolios.php</filename>
+			<filename>controller.php</filename>
+			<filename>install.mysql.utf8.sql</filename>
+		</files>
+		<languages folder="languages-admin">
+			<language tag="ru-RU">ru-RU/ru-RU.com_portfolios.ini</language>
+		</languages>
+	</administration>
+</install>
