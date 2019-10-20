@@ -32,6 +32,9 @@ class ringclientViewLanding extends JView
         $managerList = $model->getManagerList();
         $this->assignRef('managerList',$managerList);
 
+        $disignerList = $model->getDisignerList();
+        $this->assignRef('disignerList',$disignerList);
+
         $search = JRequest::getVar('searchall','','string');
         $this->assignRef('search',$search);
 

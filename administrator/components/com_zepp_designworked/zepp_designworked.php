@@ -26,9 +26,9 @@ if($controller = JRequest::getWord('controller')) {
 $classname	= 'designworkedsController'.$controller;
 $controller	= new $classname( );
 
-//echo 'start--zepp_ringclient.php<br>';
+//echo 'start--zepp_disignered.php<br>';
 //print_R($classname, false);echo ' - $classname <br>';print_R($controller,false);echo ' - $controller <br>';
-//echo 'start--zepp_ringclient.php<br>'; 
+//echo 'start--zepp_disignered.php<br>';
 
 // Perform the Request task
 $controller->execute( JRequest::getVar( 'task', null, 'default', 'cmd' ) );

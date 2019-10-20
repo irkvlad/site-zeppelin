@@ -64,11 +64,15 @@ class ringclientModelLanding extends JModel
        $session = JFactory::getSession();
        //$date   = JFactory::getDate();
        $manager_id =   JRequest::getVar('manager', -1 , 'int');
+       $disigner_id =   JRequest::getVar('disigner', -1 , 'int');
        $status     =   JRequest::getVar('status',-1,'int');
        $startdate  =   JRequest::getVar('startdate',-1 );
        $enddate    =   JRequest::getVar('enddate', -1 );
         if ($manager_id >= 0) {
-            $session->set( 'manager', $manager_id );
+            $session->set( 'manager', $manager_id );//disigner
+        }
+        if ($disigner_id >= 0) {
+            $session->set( 'disigner', $disigner_id );//disigner
         }
         if ($status >= 0) {
             $session->set( 'status', $status );
@@ -115,6 +119,7 @@ class ringclientModelLanding extends JModel
             case '4': $checkstatus = ' (`status` = 1 OR `status` = 2 ) '; break;
             case '5': $checkstatus = ' (`status` = 5 ) '; break;    // ошибка
             case '0': $checkstatus = ' (`status` < 5 ) '; break;
+            case '6': $checkstatus = ' (`status` = 6 ) '; break; //Дизайн
         }
 
         if ($startdate <> 0){

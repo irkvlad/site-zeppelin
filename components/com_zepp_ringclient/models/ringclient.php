@@ -293,6 +293,55 @@ class ringclientModelRingclient extends JModel
             return $manager_list;
         }
 
+    /**
+     * Список дизайнеров
+     */
+    function getDisignerList()
+    {
+        $session = JFactory::getSession();
+        $disigner_id =  $session->get('disigner', '0');//  JRequest::getVar('disigner', 0 , 'int');
+        // Получаем объект базы данных
+        $db     =& JFactory::getDBO(); // Формируем запрос (OR c.catid=4)
+        $user 	= & JFactory::getUser();
+       // if($disigner_id === 0) $disigner_id = $user->id;
+
+        $query = " SELECT "
+            . " c.user_id AS value, "
+            . " c.name AS text  "
+            ." FROM "
+            . " jos_contact_details AS c, "
+            . " jos_projectlog_groups_mid AS m "
+            ." WHERE "
+            . " (m.group_id=12 ) "
+            . " AND c.published=1 "
+            . " AND m.user_id = c.user_id "
+            . " AND c.company <> 2"
+        ;
+
+        $db->setQuery($query);
+        $categorylist = $db->loadObjectList();
+        // Создаём первый элемент выпадающего списка (<option value="0">Выберите категорию</option>)
+        $categories[] = JHTML::_('select.option',  '0', "Выберите дизайнера", 'value', 'text' );
+        // Добавляем массив данных из базы данных
+        $categories = array_merge( $categories, $categorylist);
+
+        //$categories[] = JHTML::_('select.option',  '114', "Без менеджера", 'value', 'text' );
+        // Получаем выпадающий список
+        $disigner_list = JHTML::_(
+            'select.genericlist' /* тип элемента формы */,
+            $categories /* массив, каждый элемент которого содержит value и текст */,
+            'disigner' /* id и name select`a формы */,
+            'size="1"' /* другие атрибуты элемента select class="inputbox" */,
+            'value' /* название поля в массиве объектов содержащего ключ */,
+            'text' /* название поля в массиве объектов содержащего значение */,
+            $disigner_id /* value элемента, который должен быть выбран (selected) по умолчанию */,
+            'disigner' /* id select'a формы */,
+            true /* пропускать ли элементы полей text через JText::_(), default = false */
+        );
+
+        return $disigner_list;
+    }
+
 
 
 }

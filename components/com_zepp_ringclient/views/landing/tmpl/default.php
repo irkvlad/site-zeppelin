@@ -25,11 +25,17 @@ $dateend = $this->enddate;      //JRequest::getVar('enddate', $date->toFormat ('
 $creator = JRequest::getVar('creator',0,'int');
 
 $bcolor         = "#fff";
+$disignColor    = "#ee7e1a";
 $statuscolorYes = '#C0EAB9';
 $statuscolorNo  = '#CCD5EA';
 $statuscolorErr = '#F9E8E8'
 
 ?>
+<style>
+    .disignColor {
+        background-color: #ee7e1a;
+    }
+</style>
 <script type="text/javascript">
 <!--
     function validate_form_no() { document.adminForm.task.value = "Отказались от заказов"; return true;   }
@@ -47,7 +53,7 @@ $statuscolorErr = '#F9E8E8'
                 <div  class="header" >Заказы у менеджеров</div>
                 <div id="toolbar" class="toolbar">
 
-                        <table border="0" bordercolor="#000" ><tr><td>Цвета строк:</td><td bgcolor="<?php echo $statuscolorYes; ?>" >Ушли в работу</td>
+                        <table border="0" bordercolor="#000" ><tr><td>Цвета строк:</td><td bgcolor="<?php echo $disignColor; ?>" >Дизайн</td><td bgcolor="<?php echo $statuscolorYes; ?>" >Ушли в работу</td>
                                 <td bgcolor="<?php echo $statuscolorNo; ?>" >Не состоялись</td><td bgcolor="<?php echo $statuscolorErr; ?>" >Ошибочные</td></tr></table>
                         <center><h2>Что бы зайти в заказ кликните по теме заказа</h2></center>
                         <?php if ( ($user->gid > 23)  ) : ?>
@@ -58,6 +64,7 @@ $statuscolorErr = '#F9E8E8'
                         <select name="status" id="status" >
                             <option value="0" >Все</option>
                             <option value="1" >Без решения</option>
+                            <option value="6" >Дизайн</option>
                             <option value="2" >Ушли в работу</option>
                             <option value="3" >Не состоялись</option>
                             <option value="4" >Имеют решение</option>
@@ -75,6 +82,7 @@ $statuscolorErr = '#F9E8E8'
                         <input class="text_area" type="text" name="searchall" id="searchall" size="20" maxlength="40" value=""
                             onclick="this.value=''">
                         <?php echo $this->managerList;?>
+                        <?php echo $this->disignerList;?>
                         <input type="submit" name="submit" class="button" value="Показать" />
                         <input type="hidden" name="boxchecked" value="0" />
                         <input type="hidden" name="task" value="" />
@@ -108,6 +116,8 @@ $statuscolorErr = '#F9E8E8'
                                 <th><?php echo JText::_( 'Телефон' ); ?></th>
                                 <th><?php echo JText::_( 'Создал' ); ?></th>
                                 <th><?php echo JText::_( 'Менеджер' ); ?></th>
+                                <th><?php echo JText::_( 'Дизанер' ); ?></th>
+                                <th><?php echo JText::_( 'Дата сдачи эскиза' ); ?></th>
                                 <th><?php echo JText::_( 'В работе' ); ?></th>
 								<th><?php echo JText::_( 'Разговор коммерческого директора' ); ?></th>
 								<th><?php echo JText::_( 'рентабильность' ); ?></th>
@@ -122,6 +132,7 @@ $statuscolorErr = '#F9E8E8'
                             if ($row->status == 2) $bcolor=$statuscolorNo;
                             if ($row->status == 1) $bcolor=$statuscolorYes;
                             if ($row->status == 5) $bcolor=$statuscolorErr;
+                            if ($row->status == 6) $bcolor=$disignColor;
                     ?>
                             <tr style="background-color:<?php echo $bcolor; ?>" class="<?php echo "row$k"; ?>">
                             <?php if ( ($user->gid > 23)  ) : ?>
@@ -144,6 +155,11 @@ $statuscolorErr = '#F9E8E8'
                                 <td><?php echo $row->telefon; ?></td>
                                 <td><?php echo $row->creator_name; ?></td>
                                 <td><?php echo ringclientHTML::getUserName($row->manager_id); ?></td>
+                                <td><?php echo ringclientHTML::getUserName($row->disigner_id); ?></td> <? //TODO: Поля в таблице ?>
+                                <td><?php
+                                          $dateD = JFactory::getDate($row->disigner_data);  //TODO: Поля в таблице
+                                          $datestrD = $dateD->toFormat ('%d.%m.%Y');
+                                          echo $datestrD ?></td>
                                 <td><?php
                                           $date = JFactory::getDate($row->manger_data);
                                           $datestr = $date->toFormat ('%d.%m.%Y');
